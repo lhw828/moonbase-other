@@ -4,6 +4,8 @@ After=syslog.target
 
 [Service]
 ExecStart=/usr/sbin/crond -n
+ExecReload=/usr/bin/kill -HUP $MAINPID
+KillMode=process
 Restart=always
 
 [Install]

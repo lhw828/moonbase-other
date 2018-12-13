@@ -1,14 +1,14 @@
           MODULE=texlive
-         VERSION=20140525-source
+         VERSION=20180414-source
           SOURCE=$MODULE-$VERSION.tar.xz
          SOURCE2=texlive-20100722-09-texlive-fonts.conf
-      SOURCE_URL=ftp://tug.org/historic/systems/texlive/${VERSION:0:4}
+      SOURCE_URL=ftp://tug.org/texlive/historic/2018/
      SOURCE2_URL=$PATCH_URL
-      SOURCE_VFY=sha1:8cb283ad26b1fe18e1089820cf64ecc63d8224e8
-     SOURCE2_VFY=sha1:a36517f4250915b011740c7790fba749fde3aaff
+      SOURCE_VFY=sha256:fe0036d5f66708ad973cdc4e413c0bb9ee2385224481f7b0fb229700a0891e4e
+     SOURCE2_VFY=sha256:b60d90b1203be11c2a881b839512d0e83d004e9d5c6c97e35394add8ca2453c6
         WEB_SITE=http://www.tug.org/texlive/
          ENTERED=20100805
-         UPDATED=20141020
+         UPDATED=20180827
            SHORT="TeX distribution that includes web2c, pdfTeX, e-Tex and more"
 
 # Text from http://www.tug.org/texlive/

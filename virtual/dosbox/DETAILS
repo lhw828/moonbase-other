@@ -1,11 +1,11 @@
           MODULE=dosbox
-         VERSION=0.74
+         VERSION=0.74-2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$SFORGE_URL/$MODULE
-      SOURCE_VFY=sha1:2d99f0013350efb29b769ff19ddc8e4d86f4e77e
+      SOURCE_VFY=sha256:7077303595bedd7cd0bb94227fa9a6b5609e7c90a3e6523af11bc4afcb0a57cf
         WEB_SITE=http://dosbox.sourceforge.net
          ENTERED=20040331
-         UPDATED=20100512
+         UPDATED=20180914
            SHORT="DOSBox a dos emulator with cpu emu"
 
 cat << EOF

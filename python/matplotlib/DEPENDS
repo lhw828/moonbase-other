@@ -1,4 +1,0 @@
-depends setuptools
-depends numpy
-depends python-dateutil
-depends cycler

@@ -1,15 +1,14 @@
           MODULE=ghc
-         VERSION=8.2.1
-      BINVERSION=7.10.2
+         VERSION=8.6.3
           SOURCE=$MODULE-$VERSION-src.tar.xz
-         SOURCE2=$MODULE-$BINVERSION-i386-unknown-linux-deb7.tar.xz
+         SOURCE2=$MODULE-$VERSION-i386-deb8-linux.tar.xz
       SOURCE_URL=http://www.haskell.org/ghc/dist/$VERSION/
-     SOURCE2_URL=http://www.haskell.org/ghc/dist/$BINVERSION/
-      SOURCE_VFY=sha256:cfc2d496708dacea3ea7dde4c6a4b921b97a7f550ee2acea44cfa535840593f0
-     SOURCE2_VFY=sha256:7a4ea84ba30df422319d4a706883492398204574e02254f08c8dff688d318350
+     SOURCE2_URL=http://www.haskell.org/ghc/dist/$VERSION/
+      SOURCE_VFY=sha256:9f9e37b7971935d88ba80426c36af14b1e0b3ec1d9c860f44a4391771bc07f23
+     SOURCE2_VFY=sha256:b57070ba8c70b1333a3e47ce124baf791be39c20a592954772532fd6dd51882f
         WEB_SITE=http://www.haskell.org
          ENTERED=20130714
-         UPDATED=20170818
+         UPDATED=20181211
            SHORT="The Glasgow Haskell Compiler"
 
 cat << EOF

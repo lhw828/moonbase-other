@@ -1,4 +1,5 @@
-depends pkgconfig
+depends cmake
+depends pkgconf
 
 optional_depends dbus \
                  "--enable-dbus" \

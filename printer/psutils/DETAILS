@@ -1,12 +1,12 @@
           MODULE=psutils
-         VERSION=20140525
+         VERSION=20180414
           SOURCE=texlive-$VERSION-source.tar.xz
+      SOURCE_URL=ftp://tug.org/texlive/historic/2018/
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/texlive-$VERSION-source
-      SOURCE_URL=ftp://tug.org/historic/systems/texlive/${VERSION:0:4}
-      SOURCE_VFY=sha1:8cb283ad26b1fe18e1089820cf64ecc63d8224e8
+      SOURCE_VFY=sha256:fe0036d5f66708ad973cdc4e413c0bb9ee2385224481f7b0fb229700a0891e4e
         WEB_SITE=http://www.tug.org/texlive/
          ENTERED=20010922
-         UPDATED=20141020
+         UPDATED=20181008
            SHORT="Utilities for manipulating PostScript files"
 
 cat << EOF

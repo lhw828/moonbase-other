@@ -1,8 +1,7 @@
-depends Python
 depends libgcrypt
 depends gnutls
 depends gtk+-3
-depends pygobject
+depends pulseaudio
 depends intltool
 
 optional_depends vala       "--enable-vala" "--disable-vala" "for vala bindings"

@@ -1,11 +1,12 @@
             MODULE=tornado
-           VERSION=4.5.2
+           VERSION=5.1.1
             SOURCE=$MODULE-$VERSION.tar.gz
    SOURCE_URL_FULL=http://github.com/tornadoweb/tornado/archive/v$VERSION.tar.gz
-        SOURCE_VFY=sha256:f30c723827afd2f8aceae2a13a40ee05487268920fd55cf3b5b33f02bd15511e
+        SOURCE_VFY=sha256:a1da335a2978b9a8c3544cab10076d799442d7988ed0b4f2be035fe4388ca8dd
           WEB_SITE=http://www.tornadoweb.org
+              TYPE=python3
            ENTERED=20130529
-           UPDATED=20171122
+           UPDATED=20180917
              SHORT="Python web framework and networking library"
 
 cat << EOF

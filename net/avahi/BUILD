@@ -1,7 +1,11 @@
+export PYTHON=/usr/bin/python2 &&
+
 NOCONFIGURE=1 ./autogen.sh &&
 
-if module_installed qt4; then
-  . /etc/profile.d/qt4.rc
+if module_installed qt5; then
+  . /etc/profile.d/qt5.rc
+  QT5_CFLAGS="-I/usr/include/qt5/QtCore -I/usr/include/qt5" &&
+  QT5_LIBS="-L/usr/lib/qt5 -lQt5Core"
 fi &&
 
 add_priv_user avahi:avahi -d /dev/null -s /bin/false &&
@@ -11,10 +15,12 @@ add_priv_group netdev &&
 
 OPTS+=" --enable-compat-howl \
         --enable-compat-libdns_sd \
+        --enable-libgdbm-compat \
         --disable-stack-protector \
         --disable-monodoc \
         --disable-static \
         --disable-qt3 \
+        --disable-qt4 \
         --with-distro=none \
         --sbindir=/usr/bin" &&
 

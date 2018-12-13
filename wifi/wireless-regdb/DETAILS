@@ -1,0 +1,13 @@
+          MODULE=wireless-regdb
+         VERSION=2018.10.24
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://mirrors.edge.kernel.org/pub/software/network/wireless-regdb/
+      SOURCE_VFY=sha256:0d3e845ac77d21aac9b88642c3dd043a83e3920d706b63d5e5c31dffdbec9116
+        WEB_SITE=https://wireless.wiki.kernel.org/en/developers/regulatory/wireless-regdb/
+         ENTERED=20181004
+         UPDATED=20181123
+           SHORT="Central Regulatory Domain Database"
+
+cat << EOF
+wireless-regdb is regulatory database used by Linux.
+EOF

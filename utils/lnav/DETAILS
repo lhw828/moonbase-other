@@ -1,11 +1,11 @@
           MODULE=lnav
-         VERSION=0.8.2
+         VERSION=0.8.4
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://github.com/tstack/lnav/archive/v$VERSION/
-      SOURCE_VFY=sha256:50afb1dec659d6169ba7f6f16642e53cc680eade6f460d73a180f9e9470d6016
+      SOURCE_VFY=sha256:17cf1692f914c8cf2191040365ef481c32d4faf054f7c89e5c573aef7b988d2a
         WEB_SITE=http://lnav.org/
          ENTERED=20170811
-         UPDATED=20170811
+         UPDATED=20180919
            SHORT="A curses-based tool for viewing and analyzing log files"
 
 cat << EOF

@@ -1,18 +1,18 @@
           MODULE=mpd
-         VERSION=0.20.12
+         VERSION=0.21.3
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=http://www.musicpd.org/download/$MODULE/${VERSION%.*}/
-      SOURCE_VFY=sha256:e159ac0608fb85c891bd19375ed7056d5f9ec4ba492b052f24820513e774f709
+      SOURCE_VFY=sha256:6cf60e644870c6063a008d833a6c876272b7679a400b83012ed209c15ce06e2a
         WEB_SITE=http://musicpd.org
          ENTERED=20060421
-         UPDATED=20171127
+         UPDATED=20181116
            SHORT="Music player daemon"
 
 cat << EOF
-Music Player Daemon (MPD) allows remote access for playing music (MP3,
-Ogg Vorbis, FLAC, AAC, Mod, and wave files) and managing playlists.
-MPD is designed for integrating a computer into a stereo system that
-provides control for music playback over a local network. It also
-makes a great desktop music player, especially if you are a console
-junkie, like frontend options, or restart X often.
+Music Player Daemon (MPD) allows remote access for playing music (MP3, Ogg
+Vorbis, FLAC, AAC, Mod, and wave files) and managing playlists.
+MPD is designed for integrating a computer into a stereo system that provides
+control for music playback over a local network. It also makes a great desktop
+music player, especially if you are a console junkie, like frontend options,
+or restart X often.
 EOF

@@ -1,12 +1,12 @@
           MODULE=OpenImageIO-oiio
-         VERSION=1.7.17
+         VERSION=1.8.13
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/oiio-Release-${VERSION}
- SOURCE_URL_FULL=http://github.com/OpenImageIO/oiio/archive/Release-$VERSION.tar.gz
-      SOURCE_VFY=sha256:669c59d06399dd882c3e2469bb3a4b33d537db150f6fe056495c3429b5c3838f
+ SOURCE_URL_FULL=https://github.com/OpenImageIO/oiio/archive/Release-$VERSION.tar.gz
+      SOURCE_VFY=sha256:24b93ebe6cc31aa92d3246b65ec66fcf626af32fcd4b04847c7f23c8e2adcabd
         WEB_SITE=http://www.openimageio.org/
          ENTERED=20130329
-         UPDATED=20170923
+         UPDATED=20180822
            SHORT="library for reading and writing images"
 
 cat << EOF

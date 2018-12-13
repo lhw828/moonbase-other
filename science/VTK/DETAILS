@@ -1,0 +1,13 @@
+          MODULE=VTK
+         VERSION=8.1.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.vtk.org/files/release/${VERSION%.*}
+      SOURCE_VFY=sha256:0995fb36857dd76ccfb8bb07350c214d9f9099e80b1e66b4a8909311f24ff0db
+        WEB_SITE=http://www.vtk.org/
+         ENTERED=20101121
+         UPDATED=2018118
+           SHORT="Visualization ToolKit"
+
+cat << EOF
+For 3D computer graphics, image processing and visualization.
+EOF

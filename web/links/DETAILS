@@ -1,11 +1,11 @@
           MODULE=links
-         VERSION=2.14
+         VERSION=2.17
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://links.twibright.com/download
-      SOURCE_VFY=sha256:f70d0678ef1c5550953bdc27b12e72d5de86e53b05dd59b0fc7f07c507f244b8
+      SOURCE_VFY=sha256:d8389763784a531acf7f18f93dd0324563bba2f5fa3df203f27d22cefe7a0236
         WEB_SITE=http://links.twibright.com
          ENTERED=20020523
-         UPDATED=20161127
+         UPDATED=20180907
            SHORT="graphics and text mode web browser"
 
 cat << EOF

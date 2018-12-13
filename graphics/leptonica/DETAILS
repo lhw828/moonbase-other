@@ -1,11 +1,11 @@
           MODULE=leptonica
-         VERSION=1.73
+         VERSION=1.76.0
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://www.leptonica.com/source/
-      SOURCE_VFY=sha256:19e4335c674e7b78af9338d5382cc5266f34a62d4ce533d860af48eaa859afc1
+ SOURCE_URL_FULL=https://github.com/DanBloomberg/leptonica/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:ff98ffef6103cda0e400676f81113a8157569ac0f453c6e03a1a27b305ba25a7
         WEB_SITE=http://www.leptonica.com/
          ENTERED=20111202
-         UPDATED=20150516
+         UPDATED=20180822
            SHORT="Useful for image processing and image analysis"
 
 cat << EOF

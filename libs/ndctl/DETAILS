@@ -1,0 +1,14 @@
+          MODULE=ndctl
+         VERSION=63
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/pmem/ndctl/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:c9822c46f6b366427da8ae9cb6f9706fa88ee7e33e91c273e325d9f0666998ac
+        WEB_SITE=https://github.com/pmem/ndctl
+         ENTERED=20180511
+         UPDATED=20181211
+           SHORT="A library to manage the non-volatile memory devices"
+
+cat << EOF
+Utility library for managing the libnvdimm (non-volatile memory device)
+sub-system in the Linux kernel.
+EOF

@@ -1,14 +1,10 @@
-
-  cd metis-4.0 &&
-  make  &&
-
-  if in_depends $MODULE tbb ; then
-    CLFAGS+=" ${CFLAGS} -DHAVE_TBB"
-  fi &&
+  cd metis-5.1.0 &&
+  make $METIS_OPTS &&
+  default_make &&
 
   cd $SOURCE_DIRECTORY/ &&
-  make CFLAGS+=" -fPIC" library &&
-  prepare_install  &&
-  make install     &&
 
-  install metis-4.0/libmetis.a /usr/lib/
+  make $SS_BUILD_OPTS &&
+
+  prepare_install &&
+  make $SS_INSTALL_OPTS install

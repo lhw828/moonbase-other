@@ -1,3 +1,0 @@
-depends dbus-glib
-depends Python-3
-depends docutils

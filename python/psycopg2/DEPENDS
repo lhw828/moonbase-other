@@ -1,4 +1,0 @@
-depends Python-3
-depends postgresql
-
-optional_depends Python "" "" "for Python2 support"

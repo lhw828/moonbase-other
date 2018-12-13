@@ -3,28 +3,26 @@
 # should version bump to x.y.(z-1)-(highest). That version is always
 # kept on the ftp.imagemagick.org site and should be considered STABLE!!!
           MODULE=ImageMagick
-         VERSION=6.9.9-26
+         VERSION=6.9.10-16
           SOURCE=$MODULE-$VERSION.tar.xz
-   SOURCE_URL[0]=http://www.imagemagick.org/download/
+   SOURCE_URL[0]=https://www.imagemagick.org/download/
    SOURCE_URL[1]=http://mirrors-usa.go-parts.com/mirrors/$MODULE
    SOURCE_URL[2]=ftp://ftp.nluug.nl/pub/$MODULE
    SOURCE_URL[3]=ftp://gd.tuwien.ac.at/pub/graphics/$MODULE
-      SOURCE_VFY=sha256:dcf23a7356a970e613a9fa2cfaa64c999ea8e278a45aec4905e54398d6c12c83
+      SOURCE_VFY=sha256:3dd570fd1b770fbdf30015131ca1ad06606a340b04a348d4276d509493d98bfa
       WEB_SITE=http://www.imagemagick.org
          ENTERED=20010922
-         UPDATED=20171210
+         UPDATED=20181210
            SHORT="Automated and interactive manipulation of images"
 
 cat << EOF
-ImageMagick (TM) is a package for the automated and interative
-manipulation of images. It supports the display and interactive
-manipulation of images when used with the X Window System. Although
-the software is copyrighted, it is available for free and can be
-redistributed without fee. ImageMagick may be used as a component of
-both open source and proprietary applications. ImageMagick compiles
-and runs under Unix, Linux, Windows '95 and later, Apple MacOS, and
-Compaq VMS. Binary packages are available for most operating systems.
-Application programming interfaces (APIs) are provided to support
-development of image processing applications in the C, C++, and Perl
-languages.
+ImageMagick (TM) is a package for the automated and interative manipulation of
+images. It supports the display and interactive manipulation of images when
+used with the X Window System. Although the software is copyrighted, it is
+available for free and can be redistributed without fee. ImageMagick may be
+used as a component of both open source and proprietary applications.
+ImageMagick compiles and runs under Unix, Linux, Windows '95 and later, Apple
+MacOS, and Compaq VMS. Binary packages are available for most operating systems.
+Application programming interfaces (APIs) are provided to support development
+of image processing applications in the C, C++, and Perl languages.
 EOF

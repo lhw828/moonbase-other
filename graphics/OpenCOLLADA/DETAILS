@@ -1,11 +1,11 @@
           MODULE=OpenCOLLADA
-         VERSION=1.6.32
+         VERSION=1.6.66
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/KhronosGroup/$MODULE/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:545b37ea84ecd6e1445098654fb044b425fc80afed03d590330e4cc9bca88c89
+      SOURCE_VFY=sha256:3b70781168f83482e69982f3904806242238b350162fea874e49343ea04da583
         WEB_SITE=http://www.opencollada.org
          ENTERED=20160509
-         UPDATED=20160930
+         UPDATED=20181105
            SHORT="A stream based reader and writer library for COLLADA files"
 
 cat << EOF

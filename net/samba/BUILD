@@ -1,20 +1,16 @@
+export PYTHON=/usr/bin/python2 &&
+
 #For now this skirts around runtime error: file file:/usr/share/sgml/docbook/xsl-stylesheets-1.79.2/lib/lib.xsl line 56 element variable
 #xsltApplySequenceConstructor: A potential infinite template recursion was detected; thus tanking the build.
 #The current default is 3000 and apparently not enough 
-XSLTPROC="xsltproc --maxdepth 15000" &&
-export XSLTPROC &&
-
-# Samba build will break if talloc is installed
-if module_installed talloc; then
-  lrm talloc
-  export TALLOC=installed
-fi &&
-
-mkdir -p /etc/samba /usr/share/samba /var/log/samba &&
+export XSLTPROC="xsltproc --maxdepth 15000" &&
 
 LDFLAGS+=" -Wl,--no-as-needed" &&
+BUNDLED_LIBRARIES="!talloc,!pytalloc-popt,!popt" &&
 
-OPTS+=" --libexecdir=/usr/lib" &&
+if in_depends $MODULE tdb; then
+  BUNDLED_LIBRARIES+=",!tdb"
+fi &&
 
 ./buildtools/bin/waf configure \
        --prefix=/usr           \
@@ -23,7 +19,9 @@ OPTS+=" --libexecdir=/usr/lib" &&
        --with-piddir=/var/run  \
        --mandir=/usr/share/man \
        --enable-fhs            \
+       --bundled-libraries=$BUNDLED_LIBRARIES \
        --disable-rpath-install \
+       --with-systemd \
        --with-piddir=/var/run  \
        --with-configdir=/etc/samba \
        --with-lockdir=/var/cache/samba \
@@ -35,6 +33,9 @@ default_make &&
 
 # install sample smb.conf
 install -m644 examples/smb.conf.default /etc/samba/smb.conf.default &&
+install -dm1777 /var/spool/samba &&
+install -dm700 /etc/samba/private &&
+mkdir -p /var/log/samba &&
 
 # fix logrotate
 sedit 's|log.%m|%m.log|g' /etc/samba/smb.conf.default &&

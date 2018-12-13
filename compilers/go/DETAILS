@@ -1,14 +1,14 @@
           MODULE=go
-         VERSION=1.9
+         VERSION=1.11.2
           SOURCE=${MODULE}$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-${MODULE}$VERSION
       SOURCE_URL=https://github.com/golang/go/archive/
-      SOURCE_VFY=sha256:e39ae97f885fb1a8d0e42cc5b48d98e765fd7e3a6b11d752aebd815c5ff16fbe
+      SOURCE_VFY=sha256:7854866866c57394217ae5facc41944dff2a7386a064b2bcc4149f7c68e3c79a
         WEB_SITE=http://golang.org/
          ENTERED=20140606
-         UPDATED=20170828
+         UPDATED=20181201
            SHORT="Compiler and tools for the Go programming language from Google"
 
-cat <<EOF
+cat << EOF
 Compiler and tools for the Go programming language from Google.
 EOF

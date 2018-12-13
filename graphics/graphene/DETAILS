@@ -1,11 +1,11 @@
           MODULE=graphene
-         VERSION=1.6.0
+         VERSION=1.8.2
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/ebassi/graphene/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:98970f859e452ce421b72726ca727fdf3ac27cb4804b62bfe520157fa46aa2fd
+      SOURCE_VFY=sha256:8c7d895536936e65c7f859f87bd14c258ac7f2c4ec999010e39e658f47c4d2ee
         WEB_SITE=http://github.com/ebassi/graphene/
          ENTERED=20160305
-         UPDATED=20170303
+         UPDATED=20180616
            SHORT="A thin layer of graphic data types"
 
 cat << EOF

@@ -1,13 +1,11 @@
           MODULE=fribidi
-         VERSION=0.19.7
-          SOURCE=$MODULE-$VERSION.tar.gz
-   SOURCE_URL[0]=http://fribidi.org/download
-   SOURCE_URL[1]=ftp://ftp.osuosl.org/pub/blfs/svn/f
-      SOURCE_VFY=sha256:3fc96fa9473bd31dcb5500bdf1aa78b337ba13eb8c301e7c28923fea982453a8
-        WEB_SITE=http://fribidi.sourceforge.net
+         VERSION=1.0.5
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://github.com/fribidi/fribidi/releases/download/v$VERSION
+      SOURCE_VFY=sha256:6a64f2a687f5c4f203a46fa659f43dd43d1f8b845df8d723107e8a7e6158e4ce
+        WEB_SITE=https://github.com/fribidi/fribidi/
          ENTERED=20021224
-         UPDATED=20150809
-           PSAFE=no
+         UPDATED=20180731
            SHORT="Free implementation of the Unicode Bidirectional (BiDi) Algorithm"
 
 cat << EOF
@@ -17,4 +15,3 @@ editors and widgets that implement BiDi functionality. The BiDi algorithm is a
 prerequesite for supporting right-to-left scripts such as Hebrew, Arabic,
 Syriac, and Thaana.
 EOF
-

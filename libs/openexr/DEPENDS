@@ -1,4 +1,0 @@
-depends zlib
-depends ilmbase
-
-optional_depends "fltk" "" "" "to build the exrdisplay FLTK application"

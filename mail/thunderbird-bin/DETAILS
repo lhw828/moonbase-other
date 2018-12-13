@@ -1,17 +1,17 @@
           MODULE=thunderbird-bin
-         VERSION=52.5.0
+         VERSION=60.3.3
           SOURCE=thunderbird-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/mozilla
    SOURCE_URL=https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$VERSION/linux-i686/en-US/
-      SOURCE_VFY=sha256:6b11d26151bdf0ad9e507fd1718d0ccadf7eefc02eb2a922306ec001fa60f217
+      SOURCE_VFY=sha256:ea5cbc9b914fc9bf6d0fcf5ec59432476583fd16c16b47c4d7c2fff4a61c5108
         WEB_SITE=http://www.mozilla.org/projects/thunderbird
          ENTERED=20091207
-         UPDATED=20171124
+         UPDATED=20181206
          ARCHIVE=off
            SHORT="A full-featured mail client"
 
 cat << EOF
-This is the pre-compiled binary version of thunderbird. It installs into /opt by
-default. It does NOT conflict with the regular lunar thunderbird module. Only
-works with kernels and glibc that provide Thread Local Storage (TLS).
+This is the pre-compiled binary version of thunderbird. It installs into /opt
+by default. It does NOT conflict with the regular lunar thunderbird module.
+Only works with kernels and glibc that provide Thread Local Storage (TLS).
 EOF

@@ -1,11 +1,11 @@
           MODULE=xerces-c
-         VERSION=3.2.0
+         VERSION=3.2.2
           SOURCE=xerces-c-$VERSION.tar.gz
       SOURCE_URL=http://apache.osuosl.org/xerces/c/3/sources/
-      SOURCE_VFY=sha256:d3162910ada85612f5b8cc89cdab84d0ad9a852a49577691e54bc7e9fc304e15
+      SOURCE_VFY=sha256:dd6191f8aa256d3b4686b64b0544eea2b450d98b4254996ffdfe630e0c610413
         WEB_SITE=http://xerces.apache.org/xerces-c/
          ENTERED=20040126
-         UPDATED=20171021
+         UPDATED=20181002
            PSAFE=no
            SHORT="Validating XML parser written in C++"
 

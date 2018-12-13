@@ -1,18 +1,18 @@
           MODULE=gst-plugins-base-1.0
-         VERSION=1.12.4
+         VERSION=1.14.4
           SOURCE=${MODULE%-1*}-$VERSION.tar.xz
       SOURCE_URL=http://gstreamer.freedesktop.org/src/gst-plugins-base
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE%-1*}-$VERSION
-      SOURCE_VFY=sha256:4c306b03df0212f1b8903784e29bb3493319ba19ebebf13b0c56a17870292282
+      SOURCE_VFY=sha256:ca6139490e48863e7706d870ff4e8ac9f417b56f3b9e4b3ce490c13b09a77461
         WEB_SITE=http://gstreamer.freedesktop.org/modules/gst-plugins-base.html
          ENTERED=20130103
-         UPDATED=20171204
+         UPDATED=20181003
            SHORT="The base set of plugins for Gstreamer 1.x"
 
 cat << EOF
-gst-plugins-base is a well-groomed and well-maintained collection of
-GStreamer plug-ins and elements, spanning the range of possible types
-of elements one would want to write for GStreamer. It also contains
-helper libraries and base classes useful for writing elements. A wide
-range of video and audio decoders, encoders, and filters are included.
+gst-plugins-base is a well-groomed and well-maintained collection of GStreamer
+plug-ins and elements, spanning the range of possible types of elements one
+would want to write for GStreamer. It also contains helper libraries and base
+classes useful for writing elements. A wide range of video and audio decoders,
+encoders, and filters are included.
 EOF

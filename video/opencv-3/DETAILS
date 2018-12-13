@@ -1,21 +1,22 @@
           MODULE=opencv-3
-         VERSION=3.3.1
-          SOURCE=$VERSION.zip
-         SOURCE2=$VERSION.tar.gz
- SOURCE_URL=https://github.com/opencv/opencv/archive/
-SOURCE2_URL=https://github.com/opencv/opencv_contrib/archive/
+         VERSION=3.4.4
+          SOURCE=${MODULE%-*}-$VERSION.tar.gz
+         SOURCE2=${MODULE%-*}_contrib-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/opencv/opencv/archive/$VERSION.tar.gz
+SOURCE2_URL_FULL=https://github.com/opencv/opencv_contrib/archive/$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/opencv-$VERSION
-      SOURCE_VFY=sha256:e59412c7e0d398113b1e454d600fcdff54cd77100a84483ac0d82bbf52496932
-     SOURCE2_VFY=sha256:6f3ce148dc6e147496f0dbec1c99e917e13bf138f5a8ccfc3765f5c2372bd331
+      SOURCE_VFY=sha256:a35b00a71d77b484f73ec485c65fe56c7a6fa48acd5ce55c197aef2e13c78746
+     SOURCE2_VFY=sha256:765446d994713363554978d1da447fef77a2cdf9e38742f0a98b13b92652626d
         WEB_SITE=http://opencv.org/
+            TYPE=cmake
          ENTERED=20050404
-         UPDATED=20171130
+         UPDATED=20181118
            SHORT="Open Source Computer Vision Library"
 
 cat << EOF
 This library is mainly aimed at real time computer vision.
-Some example areas would be Human-Computer Interaction (HCI);
-Object Identification, Segmentation and Recognition; Face Recognition;
-Gesture Recognition; Motion Tracking, Ego Motion, Motion Understanding;
-Structure From Motion (SFM); and Mobile Robotics.
+Some example areas would be Human-Computer Interaction (HCI); Object
+Identification, Segmentation and Recognition; Face Recognition; Gesture
+Recognition; Motion Tracking, Ego Motion, Motion Understanding; Structure
+From Motion (SFM); and Mobile Robotics.
 EOF

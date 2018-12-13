@@ -1,15 +1,14 @@
          MODULE=mkvtoolnix
-        VERSION=18.0.0
+        VERSION=29.0.0
          SOURCE=$MODULE-$VERSION.tar.xz
      SOURCE_URL=http://www.bunkus.org/videotools/$MODULE/sources
-     SOURCE_VFY=sha256:b8282d6d279caa86038721d2a49471d1dd25a465ee1a779ee9c2a99bc8ff972f
+     SOURCE_VFY=sha256:54eb5f88fe3c9c7b5df77f80b0dfcac7695c19a8226f8ba52be8ad15ba0975d3
        WEB_SITE=http://www.bunkus.org/videotools/mkvtoolnix
         ENTERED=20031113
-        UPDATED=20171121
+        UPDATED=20181203
           SHORT="Tools for using Matroska audio/video container files"
 
 cat << EOF
-MKVtoolnix is a set of tools to create, alter and inspect Matroska
-audio/video container files, just what the OGMtools do for the OGM
-format.
+MKVtoolnix is a set of tools to create, alter and inspect Matroska audio/video
+container files, just what the OGMtools do for the OGM format.
 EOF

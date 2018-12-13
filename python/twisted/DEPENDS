@@ -1,4 +1,0 @@
-depends zope.interface
-depends pyopenssl
-depends pycrypto
-depends setuptools

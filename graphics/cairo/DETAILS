@@ -1,19 +1,16 @@
           MODULE=cairo
-         VERSION=1.14.10
+         VERSION=1.16.0
           SOURCE=$MODULE-$VERSION.tar.xz
-         SOURCE2=cairo-respect-fontconfig.patch
-      SOURCE_URL=http://cairographics.org/releases
-     SOURCE2_URL=http://data.gpo.zugaina.org/poly-c/x11-libs/cairo/files/
-      SOURCE_VFY=sha256:7e87878658f2c9951a14fc64114d4958c0e65ac47530b8ac3078b2ce41b66a09
-     SOURCE2_VFY=sha256:1732f21adfe5ab291d987b7537b13470266253f599901a4707d27fd2b3d66734
+      SOURCE_URL=https://cairographics.org/releases/
+      SOURCE_VFY=sha256:5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
         WEB_SITE=http://cairographics.org
          ENTERED=20040506
-         UPDATED=20170617
+         UPDATED=20181021
            SHORT="A multi-platform 2D vector graphics library"
 
 cat << EOF
-Cairo is a vector graphics library designed to provide high-quality
-display and print output. Currently supported output targets include
-the X Window System, OpenGL (via glitz), in-memory image buffers, and
-image files (PNG and PostScript).
+Cairo is a vector graphics library designed to provide high-quality display
+and print output.
+Currently supported output targets include the X Window System, OpenGL (via
+glitz), in-memory image buffers, and image files (PNG and PostScript).
 EOF

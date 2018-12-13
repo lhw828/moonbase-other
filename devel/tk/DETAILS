@@ -1,15 +1,15 @@
             MODULE=tk
-           VERSION=8.6.7
-            SOURCE=$MODULE$VERSION-src.tar.gz
+           VERSION=8.6.9
+            SOURCE=$MODULE${VERSION}.1-src.tar.gz
   SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE$VERSION
         SOURCE_URL=$SFORGE_URL/tcl
-        SOURCE_VFY=sha256:061de2a354f9b7c7d04de3984c90c9bc6dd3a1b8377bb45509f1ad8a8d6337aa
-           SOURCE2=tcl$VERSION-src.tar.gz
+        SOURCE_VFY=sha256:8fcbcd958a8fd727e279f4cac00971eee2ce271dc741650b1fc33375fb74ebb4
+           SOURCE2=tcl${VERSION}-src.tar.gz
        SOURCE2_URL=$SFORGE_URL/tcl
-       SOURCE2_VFY=sha256:7c6b8f84e37332423cfe5bae503440d88450da8cc1243496249faa5268026ba5
+       SOURCE2_VFY=sha256:ad0cd2de2c87b9ba8086b43957a0de3eb2eb565c7159d5f53ccbba3feb915f4e
           WEB_SITE=http://tcl.sourceforge.net
            ENTERED=20031105
-           UPDATED=20170810
+           UPDATED=20181115
              SHORT="Tk provides a portable GUI platform"
 
 cat << EOF

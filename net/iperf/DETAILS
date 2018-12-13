@@ -1,11 +1,11 @@
           MODULE=iperf
-         VERSION=2.0.10
+         VERSION=2.0.12
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$SFORGE_URL/${MODULE}2
-      SOURCE_VFY=sha256:7fe4348dcca313b74e0aa9c34a8ccd713b84a5615b8578f4aa94cedce9891ef2
+      SOURCE_VFY=sha256:367f651fb1264b13f6518e41b8a7e08ce3e41b2a1c80e99ff0347561eed32646
         WEB_SITE=http://dast.nlanr.net/Projects/Iperf
          ENTERED=20070609
-         UPDATED=20170828
+         UPDATED=20180819
            SHORT="Network testing tool"
 
 cat << EOF

@@ -1,15 +1,15 @@
           MODULE=libgit2
-         VERSION=0.26.0
+         VERSION=0.27.7
           SOURCE=$MODULE-$VERSION.tar.gz
- SOURCE_URL_FULL=http://github.com/libgit2/libgit2/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:6a62393e0ceb37d02fe0d5707713f504e7acac9006ef33da1e88960bd78b6eac
+ SOURCE_URL_FULL=https://github.com/libgit2/libgit2/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:1a5435a483759b1cd96feb12b11abb5231b0688016db506ce5947178f6ba2531
         WEB_SITE=http://libgit2.github.com/
          ENTERED=20150205
-         UPDATED=20171130
+         UPDATED=20181105
            SHORT="Pure C implementation of the Git core methods"
 
 cat << EOF
-libgit2 is a portable, pure C implementation of the Git core methods provided as a
-re-entrant linkable library with a solid API, allowing you to write native speed
-custom Git applications in any language which supports C bindings.
+libgit2 is a portable, pure C implementation of the Git core methods provided
+as a re-entrant linkable library with a solid API, allowing you to write native
+speed custom Git applications in any language which supports C bindings.
 EOF

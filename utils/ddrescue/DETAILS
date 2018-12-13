@@ -1,11 +1,11 @@
           MODULE=ddrescue
-         VERSION=1.21
+         VERSION=1.23
           SOURCE=$MODULE-$VERSION.tar.lz
       SOURCE_URL=http://mirrors.kernel.org/gnu/ddrescue/
-      SOURCE_VFY=sha256:f09e4eb6a209cbd0fe8ee6db2d558238cdc969afa1d94150f263402ac882e1ac
+      SOURCE_VFY=sha256:a9ae2dd44592bf386c9c156a5dacaeeb901573c9867ada3608f887d401338d8d
         WEB_SITE=http://www.gnu.org/software/ddrescue/ddrescue.html
          ENTERED=20110620
-         UPDATED=20160428
+         UPDATED=20180403
            SHORT="A dd version for rescueing data off problematic media"
 
 cat << EOF

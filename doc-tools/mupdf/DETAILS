@@ -1,21 +1,18 @@
           MODULE=mupdf
-         VERSION=1.10a
-          SOURCE=$MODULE-$VERSION.tar.gz
- SOURCE_URL_FULL=http://mupdf.com/downloads/$MODULE-$VERSION-source.tar.gz
+         VERSION=1.14.0
+          SOURCE=$MODULE-$VERSION-source.tar.xz
+      SOURCE_URL=http://mupdf.com/downloads/archive/
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION-source
-      SOURCE_VFY=sha256:aacc1f36b9180f562022ef1ab3439b009369d944364f3cff8a2a898834e3a836
+      SOURCE_VFY=sha256:603e69a96b04cdf9b19a3e41bd7b20c63b39abdcfba81a7460fcdcc205f856df
         WEB_SITE=http://mupdf.com
          ENTERED=20101023
-         UPDATED=20161206
+         UPDATED=20181004
            SHORT="A lightweight PDF viewer and toolkit"
 
 cat << EOF
-The renderer in MuPDF is tailored for high-quality anti-aliased
-graphics. It renders text with metrics and spacing accurate to within
-fractions of a pixel for the highest fidelity in reproducing the look
-of a printed page on screen.
-
-MuPDF has support for all non-interactive PDF 1.7 features, and the
-toolkit provides a simple API for accessing the internal structures of
-the PDF document.
+The renderer in MuPDF is tailored for high-quality anti-aliased graphics. It
+renders text with metrics and spacing accurate to within fractions of a pixel
+for the highest fidelity in reproducing the look of a printed page on screen.
+MuPDF has support for all non-interactive PDF 1.7 features, and the toolkit
+provides a simple API for accessing the internal structures of the PDF document.
 EOF

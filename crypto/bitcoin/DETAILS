@@ -1,17 +1,17 @@
           MODULE=bitcoin
-         VERSION=0.15.1
+         VERSION=0.17.0.1
           SOURCE=$MODULE-$VERSION.tar.gz
- SOURCE_URL_FULL=http://github.com/bitcoin/bitcoin/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:e429d4f257f2b5b6d0caaf36ed1a5f5203e5918c57837efac00b0c322a1fef79
+ SOURCE_URL_FULL=https://github.com/bitcoin/bitcoin/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:696353d5eaabf2f0b54522b8262fdc3197098b9a2702aac273d3a697ee7c64fa
         WEB_SITE=http://bitcoin.org
          ENTERED=20120820
-         UPDATED=20171112
+         UPDATED=20181031
            SHORT="Bitcoin peer-to-peer client"
 
 cat << EOF
 This application is a peer-to-peer client that builds the backbone of the
 Bitcoin network. It is suited for enthusiasts, merchants, miners, developers
-and people who want to help support the project. People who run Bitcoin-Qt
-are first class network citizens and have the highest levels of security,
-privacy and stability.
+and people who want to help support the project. People who run Bitcoin-Qt are
+first class network citizens and have the highest levels of security, privacy
+and stability.
 EOF

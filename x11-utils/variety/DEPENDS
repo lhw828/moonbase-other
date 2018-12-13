@@ -1,17 +1,17 @@
+depends gexiv2
 depends ImageMagick
 depends desktop-file-utils
-depends dbus-python
+depends python-dbus
 depends gtk+-3
-depends libnotify4
-depends pycairo
-depends beautifulsoup4
-depends pygobject2
-depends lxml
-depends pycurl
-depends Pillow
-depends pyexiv2
-depends httplib2
-depends requests
+depends libnotify
+depends python-pycairo
+depends python-beautifulsoup4
+depends python-pygobject
+depends python-lxml
+depends python-pycurl
+depends python-pillow
+depends python-httplib2
+depends python-requests
 depends python-distutils-extra
 
 # runtime depend

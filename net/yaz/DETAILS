@@ -1,11 +1,11 @@
           MODULE=yaz
-         VERSION=5.12.0
+         VERSION=5.27.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://ftp.indexdata.dk/pub/yaz/
-      SOURCE_VFY=sha256:3dc6b7ac3b74618f9e53032ce9b9903d216ed67c5478795ae9715eb12188138e
+      SOURCE_VFY=sha256:3db834b30aad941aaee67a3daf0cfc33d6f81e724dd8d54227be201ad93c18f3
         WEB_SITE=http://www.indexdata.com/yaz
          ENTERED=20141022
-         UPDATED=20150511
+         UPDATED=20181025
            SHORT="supports Z39.50/SRW/SRU clients and servers"
 
 cat << EOF

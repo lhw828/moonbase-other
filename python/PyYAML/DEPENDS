@@ -1,8 +1,0 @@
-depends setuptools
-
-optional_depends Python "" "" "for Python2 support"
-
-optional_depends yaml \
-                 "--with-libyaml" \
-                 "--without-libyaml" \
-                 "for LibYAML support"

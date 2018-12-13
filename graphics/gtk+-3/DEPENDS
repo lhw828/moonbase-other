@@ -5,6 +5,7 @@ depends cairo
 depends gdk-pixbuf
 depends gdbus-codegen
 depends at-spi2-atk
+depends libxkbcommon
 depends libepoxy
 
 optional_depends json-glib "--enable-cloudprint" "--disable-cloudprint" "also required by cloudprint"
@@ -14,7 +15,13 @@ optional_depends rest      "--enable-cloudprint" "--disable-cloudprint" "for Goo
 optional_depends wayland-protocols \
                  "--enable-wayland-backend" \
                  "--disable-wayland-backend" \
-                 "Enable the waylany backend"
+                 "for the waylany backend"
+
+# broken
+#optional_depends gtk-doc \
+#                 "--enable-gtk-doc" \
+#                 "--disable-gtk-doc" \
+#                 "for building documentation"
 
 # GI _is_ optional here. Making it a hard dependency breaks setups without GI.
 # If some project further down the line requires gtk+'s GI files,

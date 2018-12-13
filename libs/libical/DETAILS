@@ -1,11 +1,11 @@
           MODULE=libical
-         VERSION=3.0.1
+         VERSION=3.0.4
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/$MODULE/$MODULE/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:6405964d596aac64fc82c03c4486387fd6a9c09b1f7af1ff251238e66b9e66e1
+      SOURCE_VFY=sha256:20f39343701ccd3ad896a9f9e982fdf85c1d3a35572e9d962216b69a64aef2ae
         WEB_SITE=https://github.com/libical/libical/
          ENTERED=20021128
-         UPDATED=20171124
+         UPDATED=20181002
            SHORT="An implementation of the IETF's Calendar protocol"
 
 cat << EOF

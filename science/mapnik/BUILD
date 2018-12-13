@@ -1,9 +1,15 @@
-(
+ CXXFLAGS+=' -DU_USING_ICU_NAMESPACE=1' &&
 
-  python scons/scons.py configure PREFIX=/usr DEBUG=False &&
-  python scons/scons.py &&
+ export JOBS=${MAKES} &&
 
-  prepare_install &&
-  python scons/scons.py install 
-
-) > $C_FIFO 2>&1
+  PYTHON=python
+  scons configure \
+    PREFIX="/usr" \
+    INPUT_PLUGINS=all \
+    XMLPARSER=libxml2 \
+    FREETYPE_INCLUDES=/usr/include/freetype2 \
+    FREETYPE_LIBS=/usr/lib \
+    CUSTOM_CXXFLAGS="$CXXFLAGS" \
+    CUSTOM_LDFLAGS="$LDFLAGS" &&
+    
+default_make

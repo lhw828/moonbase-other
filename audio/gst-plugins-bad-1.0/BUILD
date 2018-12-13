@@ -1,10 +1,10 @@
 
-OPTS+=" --disable-static \
-        --disable-valgrind \
-        --disable-debug \
-        --disable-examples \
+OPTS+=" --disable-debug \
+        --disable-static \
         --disable-gtk-doc \
+        --disable-examples \
+        --disable-valgrind \
         --disable-gtk-doc-html \
-        --disable-cocoa" &&
+        --disable-fatal-warnings"
 
 default_build

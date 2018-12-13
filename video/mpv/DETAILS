@@ -1,15 +1,15 @@
           MODULE=mpv
-         VERSION=0.27.0
-     WAF_VERSION=1.8.12
+         VERSION=0.29.1
+     WAF_VERSION=2.0.4
           SOURCE=$MODULE-$VERSION.tar.gz
          SOURCE2=waf-$WAF_VERSION
  SOURCE_URL_FULL=http://github.com/mpv-player/mpv/archive/v$VERSION.tar.gz
      SOURCE2_URL=http://www.freehackers.org/~tnagy/release/
-      SOURCE_VFY=sha256:341d8bf18b75c1f78d5b681480b5b7f5c8b87d97a0d4f53a5648ede9c219a49c
-     SOURCE2_VFY=sha256:01bf2beab2106d1558800c8709bc2c8e496d3da4a2ca343fe091f22fca60c98b
+      SOURCE_VFY=sha256:f9f9d461d1990f9728660b4ccb0e8cb5dce29ccaa6af567bec481b79291ca623
+     SOURCE2_VFY=sha256:57e986186a0bf5758086531e3276e15e6deb7cc615821d4d41168e5fe05dd376
         WEB_SITE=http://mpv.io/
          ENTERED=20150924
-         UPDATED=20170913
+         UPDATED=20181003
            SHORT="Video player based on MPlayer/mplayer2"
 
 cat << EOF

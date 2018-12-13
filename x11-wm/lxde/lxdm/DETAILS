@@ -1,0 +1,14 @@
+          MODULE=lxdm
+         VERSION=0.5.3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:4891efee81c72a400cc6703e40aa76f3f3853833d048b72ec805da0f93567f2f
+        WEB_SITE=http://lxde.org
+         ENTERED=20100204
+         UPDATED=20180410
+           SHORT="A GUI login manager for LXDE"
+      MAINTAINER=florin@lunar-linux.org
+
+cat << EOF
+A lightweight dropped-in replacement for GDM or KDM.
+EOF

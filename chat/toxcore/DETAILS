@@ -1,12 +1,12 @@
           MODULE=toxcore
-         VERSION=0.1.10
+         VERSION=0.2.8
           SOURCE=$MODULE-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/c-$MODULE-$VERSION
- SOURCE_URL_FULL=http://github.com/TokTok/c-toxcore/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:7ec99c71a31e612ba458d708e05174afb2852cfbb4504ccb9456bd706fc27bd1
+ SOURCE_URL_FULL=https://github.com/TokTok/c-toxcore/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:47fe125d8558775a03a3ded58e9faa07a01cfecd65257e24b544b4b5698d9362
         WEB_SITE=https://tox.chat/
          ENTERED=20160215
-         UPDATED=20170822
+         UPDATED=20181009
            SHORT="Secure, configuration-free, P2P Skype replacement backend"
 
 cat << EOF

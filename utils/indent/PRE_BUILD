@@ -1,6 +1,5 @@
 default_pre_build &&
 
-patch_it $SOURCE_CACHE/$SOURCE2 1 &&
+sed -i -e '/AM_CFLAGS/s:-Werror::g' src/Makefile.{am,in} &&
 
-sedit '/FILE/d' src/indent.h &&
-sedit 's/-number/-number-sections/' doc/Makefile.in
+autoreconf -fi

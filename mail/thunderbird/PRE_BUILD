@@ -15,17 +15,12 @@
   export MOZILLA_OFFICIAL=1  &&
   export BUILD_OFFICIAL=1  &&
   export MOZ_MAKE_FILES=$MAKES  &&
-#  export MOZ_OPTIMIZE_FLAGS="$CFLAGS" &&
   export MOZ_THUNDERBIRD=1 &&
-#  export MOZ_DEBUG_FLAGS=1 &&
+  export AUTOCONF=/usr/bin/autoconf-mozilla &&
 
   cp $SCRIPT_DIRECTORY/mozconfig .  &&
   export MOZ_OBJDIR="${SOURCE_DIRECTORY}/build-mozilla"  &&
   mkdir -p ${MOZ_OBJDIR}  &&
-
-  if module_installed qt5 ; then
-    OPTS+=" --with-qtdir=/usr/lib/qt5"
-  fi &&
 
   for flag in $OPTS; do
     echo "ac_add_options $flag" >> mozconfig
@@ -36,8 +31,8 @@
 
   sed -e '/#include/i\
       print OUT "#define _GLIBCXX_INCLUDE_NEXT_C_HEADERS\\n"\;' \
-      -i mozilla/nsprpub/config/make-system-wrappers.pl &&
+      -i nsprpub/config/make-system-wrappers.pl &&
 
   sed -e '/#include/a\
       print OUT "#undef _GLIBCXX_INCLUDE_NEXT_C_HEADERS\\n"\;' \
-      -i mozilla/nsprpub/config/make-system-wrappers.pl
+      -i nsprpub/config/make-system-wrappers.pl

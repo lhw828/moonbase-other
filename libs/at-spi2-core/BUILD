@@ -1,5 +1,11 @@
-OPTS+=" --libexecdir=/usr/lib/at-spi2-core" &&
+mkdir -p build &&
 
-OPTS+=" --disable-xevie" &&
+OPTS+=" --prefix /usr -Denable_docs=false"
 
-default_build
+meson build $OPTS &&
+
+ninja -C build &&
+
+prepare_install &&
+
+ninja -C build install

@@ -1,11 +1,11 @@
        MODULE=libwps
-      VERSION=0.4.8
+      VERSION=0.4.10
        SOURCE=$MODULE-$VERSION.tar.xz
    SOURCE_URL=$SFORGE_URL/libwps
-   SOURCE_VFY=sha256:e478e825ef33f6a434a19ff902c5469c9da7acc866ea0d8ab610a8b2aa94177e
+   SOURCE_VFY=sha256:1421e034286a9f96d3168a1c54ea570ee7aa008ca07b89de005ad5ce49fb29ca
      WEB_SITE=http://libwps.sourceforge.net/
       ENTERED=20110519
-      UPDATED=20171128
+      UPDATED=20180810
         SHORT="Microsoft Works file format import filter"
 
 cat << EOF

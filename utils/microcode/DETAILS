@@ -1,18 +1,17 @@
           MODULE=microcode
-         VERSION=20160714
+         VERSION=20180312
           SOURCE=$MODULE-$VERSION.tgz
-      SOURCE_URL=https://downloadmirror.intel.com/26156/eng
-      SOURCE_VFY=sha256:f3a9c6fc93275bf1febc26f7c397ac93ed5f109e47fb52932f6dbd5cfdbc840e
+      SOURCE_URL=https://downloadmirror.intel.com/27591/eng/
+      SOURCE_VFY=sha256:0b381face2df1b0a829dc4fa8fa93f47f39e11b1c9c22ebd44f8614657c1e779
         WEB_SITE=http://downloadcenter.intel.com
          ENTERED=20070916
-         UPDATED=20161030
+         UPDATED=20180314
            SHORT="Intel microcode - data files"
 
 cat << EOF
-The microcode data file contains the latest microcode definitions for
-all Intel processors. Intel releases microcode updates to correct
-processor behavior as documented in the respective processor
-specification updates. While the regular approach to getting this
-microcode update is via a BIOS upgrade, Intel realizes that this can be
-an administrative hassle.
+The microcode data file contains the latest microcode definitions for all Intel
+processors. Intel releases microcode updates to correct processor behavior as
+documented in the respective processor specification updates. While the regular
+approach to getting this microcode update is via a BIOS upgrade, Intel realizes
+that this can be an administrative hassle.
 EOF

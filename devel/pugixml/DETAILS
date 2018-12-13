@@ -1,11 +1,11 @@
           MODULE=pugixml
-         VERSION=1.7
+         VERSION=1.9
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://github.com/zeux/pugixml/releases/download/v1.7/
-      SOURCE_VFY=sha256:fbe10d46f61d769f7d92a296102e4e2bd3ee16130f11c5b10a1aae590ea1f5ca
+ SOURCE_URL_FULL=https://github.com/zeux/pugixml/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:7ac060048bf00da4b3902cf411f0ba9f048cdc5580eed1f5a27ff51be4a38243
         WEB_SITE=http://pugixml.org/
          ENTERED=20160731
-         UPDATED=20160731
+         UPDATED=20180419
            SHORT="C++ XML processing library"
 
 cat << EOF

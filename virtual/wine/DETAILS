@@ -1,20 +1,16 @@
           MODULE=wine
-         VERSION=2.22
+         VERSION=3.21
           SOURCE=$MODULE-$VERSION.tar.xz
-         SOURCE2=$MODULE-2.0-winhlp32_fix_a_bug_in_flex.patch.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
-      SOURCE_URL=http://dl.winehq.org/wine/source/2.x/
-     SOURCE2_URL=$PATCH_URL
-      SOURCE_VFY=sha256:db5c7e7f652405d927b3ba43cc09e4e2f5726a2c7cbf9445a0d01d1b335e8b73
-     SOURCE2_VFY=sha256:390e5861a10605c805b7d20a2273f8eb436f20aab70b4299bc363cd1a57b2ac2
+      SOURCE_URL=http://dl.winehq.org/wine/source/3.x/
+      SOURCE_VFY=sha256:a84cc06015df06e12c524213a98d879caa0d63f474b911cdd87f693fcfe2e0c0
         WEB_SITE=http://www.winehq.com
          ENTERED=20010925
-         UPDATED=20171125
+         UPDATED=20181124
            SHORT="Runs Microsoft Windows programs"
 
 cat << EOF
-Wine Is Not an Emulator. It is an alternative implementation of the Windows 3.x
-and Win32 APIs. Wine provides both a development toolkit (Winelib) for porting
+Wine Is Not an Emulator. It is an alternative implementation of the Windows and
+Win32 APIs. Wine provides both a development toolkit (Winelib) for porting
 legacy Windows sources to Unix and a program loader, allowing unmodified
 Windows 3.1/95/NT binaries to run under Intel Unixes. Wine does not require
 Microsoft Windows, as it is a completely alternative implementation consisting

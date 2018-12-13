@@ -1,0 +1,26 @@
+          MODULE=python-jinja
+         VERSION=2.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/pallets/jinja/archive/$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jinja-$VERSION
+      SOURCE_VFY=sha256:0d31d3466c313a9ca014a2d904fed18cdac873a5ba1f7b70b8fd8b206cd860d6
+        WEB_SITE=http://jinja.pocoo.org/
+            TYPE=python3
+        REPLACES=jinja
+         ENTERED=20180805
+         UPDATED=20180805
+           SHORT="A templating language for Python"
+
+cat << EOF
+Jinja is a modern and designer friendly templating language for Python,
+modelled after Django?s templates. It is fast, widely used and secure with
+a optional sandboxed template execution environment.
+Features:
+    sandboxed execution
+    powerful automatic HTML escaping system for XSS prevention
+    template inheritance
+    compiles down to the optimal python code just in time
+    optional ahead of time template compilation
+    easy to debug. Line numbers of exceptions directly point to the correct line in the template.
+    configurable syntax.
+EOF

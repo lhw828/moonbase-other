@@ -1,12 +1,12 @@
           MODULE=icu4c
-         VERSION=60.1
-          SOURCE=$MODULE-${VERSION//./_}-src.tgz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/icu
-      SOURCE_URL=http://download.icu-project.org/files/$MODULE/$VERSION/
-      SOURCE_VFY=sha256:f8f5a6c8fbf32c015a467972bdb1477dc5f5d5dfea908b6ed218715eeb5ee225
+         VERSION=63-1
+          SOURCE=$MODULE-release-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/unicode-org/icu/archive/release-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/icu-release-$VERSION
+      SOURCE_VFY=sha256:9a3be16d772be2817854ef4dcb45fb7fea669ca7ca592e039264239c1acd415f
         WEB_SITE=http://icu-project.org/
          ENTERED=20081025
-         UPDATED=20171113
+         UPDATED=20181030
            SHORT="Unicode and Globalization support for software applications"
 
 cat << EOF

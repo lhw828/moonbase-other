@@ -1,11 +1,11 @@
           MODULE=distcc
-         VERSION=3.1
-          SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=http://distcc.googlecode.com/files/
-      SOURCE_VFY=sha1:30663e8ff94f13c0553fbfb928adba91814e1b3a
+         VERSION=3.3.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/distcc/distcc/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:dceb53b499a37abfc6ace80d2d5ec7dd02fbd560a1909fedb86e17cdd58e9048
         WEB_SITE=http://distcc.org/
          ENTERED=20020701
-         UPDATED=20090110
+         UPDATED=20181001
            SHORT="distribute compilation cross several machines"
 
 cat << EOF

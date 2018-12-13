@@ -1,26 +1,25 @@
           MODULE=lxc
-         VERSION=1.1.5
+         VERSION=3.0.3
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://linuxcontainers.org/downloads/
-      SOURCE_VFY=sha256:9588ad1b04e114ee7370f690c65131e28098b28d2521d97c73557d11897ed0be
+      SOURCE_URL=https://linuxcontainers.org/downloads/
+      SOURCE_VFY=sha256:620cb832cc02c63bf4d330657bf6176544e145da281ee384a34d689635a19841
         WEB_SITE=http://lxc.sourceforge.net/
          ENTERED=20120901
-         UPDATED=20151110
+         UPDATED=20181126
            SHORT="container namespace cgroup virtualisation"
 
 cat <<EOF
-The container technology is actively being pushed into the mainstream
-linux kernel. It provides the resource management through the control
-groups aka process containers and resource isolation through the
-namespaces.
+The container technology is actively being pushed into the mainstream linux
+kernel. It provides the resource management through the control groups aka
+process containers and resource isolation through the namespaces.
 
-The linux containers, lxc, aims to use these new functionalities to
-provide an userspace container object which provides full resource
-isolation and resource control for an application or a system.
+The linux containers, lxc, aims to use these new functionalities to provide an
+userspace container object which provides full resource isolation and resource
+control for an application or a system.
 
-The first objective of this project is to make the life easier for the
-kernel developers involved in the containers project and especially
-to continue working on the Checkpoint/Restart new features. The lxc
-is small enough to easily manage a container with simple command
-lines and complete enough to be used for other purposes.
+The first objective of this project is to make the life easier for the kernel
+developers involved in the containers project and especially to continue working
+on the Checkpoint/Restart new features. The lxc is small enough to easily manage
+a container with simple command lines and complete enough to be used for other
+purposes.
 EOF

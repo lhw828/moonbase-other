@@ -1,11 +1,12 @@
           MODULE=DateTime-TimeZone
-         VERSION=1.92
+         VERSION=2.20
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY
-      SOURCE_VFY=sha256:98f7641721a49560fc5781fa04407c501a39bd824745ad2496656c544941e161
-        WEB_SITE=http://search.cpan.org/~drolsky/DateTime-TimeZone
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY
+      SOURCE_VFY=sha256:6b69cb9406f7fd2f9ef452996de62686f0b8563469a7e7438fd2bf37735a2829
+        WEB_SITE=https://search.cpan.org/~drolsky/DateTime-TimeZone
+            TYPE=perl
          ENTERED=20111009
-         UPDATED=20150705
+         UPDATED=20181018
            SHORT="Time zone object base class and factory"
 
 cat << EOF

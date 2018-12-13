@@ -1,5 +1,0 @@
-depends Python
-depends swig
-depends setuptools
-depends openssl
-

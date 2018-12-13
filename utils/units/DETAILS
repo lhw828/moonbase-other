@@ -1,11 +1,11 @@
           MODULE=units
-         VERSION=2.16
+         VERSION=2.18
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$GNU_URL/$MODULE/
-      SOURCE_VFY=sha256:dcf3f78482a13b150fc6bf0f8d611510816a3424bc2b26229b85b1cadeb81686
+      SOURCE_VFY=sha256:64959c231c280ceb4f3e6ae6a19b918247b6174833f7f1894704c444869c4678
         WEB_SITE=http://www.gnu.org/software/units/units.html
          ENTERED=20020410
-         UPDATED=20171113
+         UPDATED=20181025
            SHORT="Converts values between different systems of units"
 
 cat << EOF

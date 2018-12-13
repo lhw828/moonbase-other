@@ -1,2 +1,2 @@
-depends pkgconfig
+depends pkgconf
 depends ExtUtils-Depends

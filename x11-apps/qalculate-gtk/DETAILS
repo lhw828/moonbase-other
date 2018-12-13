@@ -1,16 +1,16 @@
           MODULE=qalculate-gtk
-         VERSION=2.2.0
+         VERSION=2.8.2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://github.com/Qalculate/qalculate-gtk/releases/download/v${VERSION}/
-      SOURCE_VFY=sha25:d597a4f8cbee0cc5c17e6190fa34e97715d3144fbb15655cbc4ce18180e11571
+      SOURCE_VFY=sha25:cf924d3de4f5c70a95d83c35540fa6820fe3e19a49ce87fa1182e757246e29e9
         WEB_SITE=http://qalculate.github.io/
          ENTERED=20160728
-         UPDATED=20171207
+         UPDATED=20181205
            SHORT="Qalculate! GTK+ UI"
 
 cat << EOF
-Qalculate! is a multi-purpose desktop calculator for GNU/Linux (and Mac OS). It
-is small and simple to use but with much power and versatility underneath.
+Qalculate! is a multi-purpose desktop calculator for GNU/Linux (and Mac OS).
+It is small and simple to use but with much power and versatility underneath.
 Features include customizable functions, units, arbitrary precision, plotting,
 and a user-friendly interface (GTK+ and CLI).
 EOF

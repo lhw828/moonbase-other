@@ -1,11 +1,11 @@
           MODULE=firefox-bin
-         VERSION=57.0.2
+         VERSION=64.0
           SOURCE=firefox-$VERSION.tar.bz2
       SOURCE_URL=http://download-installer.cdn.mozilla.net/pub/firefox/releases/$VERSION/linux-i686/en-US
-      SOURCE_VFY=sha256:1ec0ddbf7c2b1af7146a3e8e0bfcf66c318cdb70730645630e925f37bc557be6
+      SOURCE_VFY=sha256:e207082ec62c2fbb626a38dfbb39370b07b6a89e1b817071469b2ef8f87b3f94
         WEB_SITE=http://www.mozilla.org/projects/firefox
          ENTERED=20091207
-         UPDATED=20171208
+         UPDATED=20181210
          ARCHIVE=off
            SHORT="A speedy, full-featured web browser"
 

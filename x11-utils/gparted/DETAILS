@@ -1,15 +1,15 @@
           MODULE=gparted
-         VERSION=0.30.0
+         VERSION=0.32.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$SFORGE_URL/$MODULE
-      SOURCE_VFY=sha256:d31193effe058bdaeb2a4cd4b514ec753191179a0bc3abefda68a2b7975ecf4a
+      SOURCE_VFY=sha256:ae1db86def71015f2d755310a32ab334354076d23bf400e35a720226112357ba
         WEB_SITE=http://gparted.sourceforge.net
          ENTERED=20050109
-         UPDATED=20171012
+         UPDATED=20180927
            SHORT="A graphical frontend to libparted"
 
 cat << EOF
-GParted stands for GNOME Partition Editor and is a graphical frontend
-to libparted. Among other features it supports creating, resizing,
-moving and copying of partitions.
+GParted stands for GNOME Partition Editor and is a graphical frontend to
+libparted. Among other features it supports creating, resizing, moving and
+copying of partitions.
 EOF

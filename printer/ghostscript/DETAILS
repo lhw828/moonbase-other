@@ -1,11 +1,11 @@
           MODULE=ghostscript
-         VERSION=9.22
+         VERSION=9.26
           SOURCE=$MODULE-$VERSION.tar.xz
-      SOURCE_URL=http://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${VERSION/./}/
-      SOURCE_VFY=sha256:c1f862e6f40f997dbe3feba89355e8cb05d55818994e10f4932b0dd9b627d1bb
-        WEB_SITE=http://www.ghostscript.com
+      SOURCE_URL=https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${VERSION/./}/
+      SOURCE_VFY=sha256:90ed475f37584f646e9ef829932b2525d5c6fc2e0147e8d611bc50aa0e718598
+        WEB_SITE=https://www.ghostscript.com
          ENTERED=20041116
-         UPDATED=20171005
+         UPDATED=20181121
            SHORT="GPL ghostscript"
 
 cat << EOF

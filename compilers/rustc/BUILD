@@ -1,9 +1,19 @@
-OPTS+=" --enable-local-rebuild --local-rust-root=$SOURCE_DIRECTORY/install" &&
-default_build &&
-./x.py dist --install -v &&
+./configure --build=$BUILD \
+            --prefix=/usr \
+            --sysconfdir=/etc \
+            --docdir=/usr/share/doc \
+            --mandir=/usr/share/man \
+            --enable-local-rebuild \
+            --local-rust-root=$SOURCE_DIRECTORY/install &&
 
-# cargo fails to build over here with libressl, so install the pre-built version
-# that should not go in /usr/etc
-sedit '/bash_completions/ d' ./standalone/cargo/manifest.in &&
+# disable docs because it broke the build
+sedit 's|#docs = true|docs = false|' config.toml &&
+
+make ${MAKES:+-j$MAKES} &&
+
+prepare_install &&
+
+./x.py install -v &&
+
 ./standalone/install.sh --prefix=/usr --components=cargo &&
-install -Dm0644 standalone/cargo/etc/bash_completions.d/cargo /etc/bash_completion.d/
+install -Dm0644 standalone/cargo/etc/bash_completion.d/cargo /etc/bash_completion.d/

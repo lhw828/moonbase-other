@@ -1,0 +1,5 @@
+depends python-setuptools
+depends python-six
+depends polkit
+depends python-dbus
+depends python-pygobject

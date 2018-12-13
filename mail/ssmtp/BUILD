@@ -1,9 +1,8 @@
 OPTS+=" --exec-prefix=/usr \
+        --sbindir=/usr/bin \
         --mandir=/usr/share/man \
         --enable-inet6 \
-        --enable-md5auth" &&
-
-OPTS+=" --sbindir=/usr/bin" &&
+        --enable-md5auth"
 
 autoconf &&
 
@@ -13,7 +12,7 @@ printf '\n\n' | default_build &&
 
 # might already be provided by another module
 if [[ ! -e /usr/bin/mailq ]]; then
-  ln -s /usr/bin/ssmtp /usr/bin/mailq &&
-  ln -s /usr/bin/ssmtp /usr/bin/sendmail &&
-  ln -s /usr/bin/ssmtp /usr/bin/newaliases
+  ln -sf /usr/bin/ssmtp /usr/bin/mailq &&
+  ln -sf /usr/bin/ssmtp /usr/bin/sendmail &&
+  ln -sf /usr/bin/ssmtp /usr/bin/newaliases
 fi

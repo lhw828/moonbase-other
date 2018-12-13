@@ -1,7 +1,8 @@
-depends pkgconfig
+depends pkgconf
 depends e2fsprogs
 depends %OSSL
 depends db
 depends readline
 depends sqlite
 depends ncurses
+depends JSON

@@ -12,16 +12,16 @@ fi &&
 
 install -m755 $SCRIPT_DIRECTORY/pon $SCRIPT_DIRECTORY/poff /usr/bin &&
 
-if [ ! -e /etc/ppp/peers/isp ];  then
+if [ ! -e /etc/ppp/peers/isp ]; then
   install -m644  $SCRIPT_DIRECTORY/peers /etc/ppp/peers/isp
 fi &&
 
-if [ ! -e /etc/ppp/chat/isp  ]; then
+if [ ! -e /etc/ppp/chat/isp ]; then
   install -m644 $SCRIPT_DIRECTORY/isp /etc/ppp/chat/isp
 fi &&
 
-chown -R root:ppp /usr/sbin/pppd /etc/ppp &&
-chmod 4750 /usr/sbin/pppd  &&
+chown -R root:ppp /usr/bin/pppd /etc/ppp &&
+chmod 4750 /usr/bin/pppd  &&
 chmod 600 /etc/ppp/*-secrets &&
 
 if module_installed systemd; then

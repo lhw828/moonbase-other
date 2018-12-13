@@ -1,11 +1,11 @@
           MODULE=rng-tools
-         VERSION=5
-          SOURCE=${MODULE}-${VERSION}.tar.gz
-      SOURCE_URL=${SFORGE_URL}/gkernel/${MODULE}/${VERSION}/
-      SOURCE_VFY=sha1:3092768ac45315a5dcc0170d05566d1d00dbad96
-        WEB_SITE=http://sourceforge.net/projects/gkernel/
+         VERSION=6.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_URL_FULL=https://github.com/nhorman/rng-tools/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:201d15e9e5ae8468b14a7a2f3a7fa714c4e83380f4468b80893148bf700c2efe
+        WEB_SITE=https://github.com/nhorman/rng-tools
          ENTERED=20131230
-         UPDATED=20141026
+         UPDATED=20181026
            SHORT="Hardware random number generation tools"
 cat << EOF
 Random number generator related utilities:

@@ -1,11 +1,11 @@
           MODULE=libHX
-         VERSION=3.22
+         VERSION=3.24
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$SFORGE_URL/libhx/
-      SOURCE_VFY=sha256:cc2087a964a82d2e50e8161cf458481ededebb7021e4660410cf53248a4c83a3
+      SOURCE_VFY=sha256:a51b3ead77cf93444b52efe14c87314e75b88cdedb4e5f4b6060a04b0c111b45
         WEB_SITE=http://libhx.sourceforge.net/
          ENTERED=20140711
-         UPDATED=20160731
+         UPDATED=20181020
            SHORT="A library providing queue, tree, I/O and utility functions"
 
 cat << EOF

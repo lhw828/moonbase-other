@@ -1,5 +1,5 @@
+depends pkgconf
 depends zlib
-depends pkgconfig
 depends ghostscript
 depends qpdf
 depends poppler

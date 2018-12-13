@@ -1,11 +1,12 @@
           MODULE=Date-Manip
-         VERSION=6.59
+         VERSION=6.73
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/S/SB/SBECK
-      SOURCE_VFY=sha256:50c71db870008dfd22f42e2e55a392a9a337a44ebbc86e98be5d209b5b0b8a12
-        WEB_SITE=http://search.cpan.org/~sbeck/Date-Manip
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/S/SB/SBECK
+      SOURCE_VFY=sha256:d39295c7c3f19b43470d1203dded8cb649b41a1098e51b5b7c7cf17b662ca255
++ should be sha256sum:
+        WEB_SITE=https://search.cpan.org/~sbeck/Date-Manip
          ENTERED=20011108
-         UPDATED=20170606
+         UPDATED=20181018
            SHORT="a perl module for easily parsing and manipulating dates"
 
 cat << EOF

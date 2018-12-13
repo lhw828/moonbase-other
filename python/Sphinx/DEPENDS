@@ -1,13 +1,8 @@
 depends docutils
-depends setuptools
-depends jinja
-depends MarkupSafe
-depends Pygments
+depends python-jinja
+depends python-pygments
 depends imagesize
 depends alabaster
 depends snowballstemmer
-depends babel
-depends six
-depends requests
-
-optional_depends Python "" " " "for Python2 support"
+depends python-babel
+depends python-requests

@@ -1,5 +1,6 @@
 depends zlib
-depends Python
+depends xmlto
+depends python2
 
 optional_depends SDL \
                  "--enable-sdl"  \

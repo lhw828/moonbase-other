@@ -1,11 +1,11 @@
           MODULE=shared-mime-info
-         VERSION=1.8
+         VERSION=1.10
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=http://freedesktop.org/~hadess
-      SOURCE_VFY=sha256:2af55ef1a0319805b74ab40d331a3962c905477d76c086f49e34dc96363589e9
+      SOURCE_VFY=sha256:c625a83b4838befc8cafcd54e3619946515d9e44d63d61c4adf7f5513ddfbebf
         WEB_SITE=http://freedesktop.org/wiki/Software/shared-mime-info
          ENTERED=20020716
-         UPDATED=20170212
+         UPDATED=20180808
            SHORT="Shared MIME-Info Specification"
            PSAFE=no
 

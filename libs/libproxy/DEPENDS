@@ -1,20 +1,25 @@
 depends vala
 depends cmake
 
-optional_depends Python \
-                 "-DWITH_PYTHON=1" \
-                 "-DWITH_PYTHON=0" \
-                 "for the Python bindings"
+optional_depends python2 \
+                 "-DWITH_PYTHON2=1" \
+                 "-DWITH_PYTHON2=0" \
+                 "for the python2 bindings"
+
+optional_depends python \
+                 "-DWITH_PYTHON3=1" \
+                 "-DWITH_PYTHON3=0" \
+                 "for the python2 bindings"
 
 optional_depends perl \
                  "-DWITH_PERL=1" \
                  "-DWITH_PERL=0" \
                  "for Perl bindings"
 
-optional_depends kdelibs \
+optional_depends kf5 \
                  "-DWITH_KDE=1" \
                  "-DWITH_KDE=0" \
-                 "for KDE bindings. ${PROBLEM_COLOR}Circular dependency, compile without first${DEFAULT_COLOR}"
+                 "for KDE/KF5 support"
 
 optional_depends %MOZJS \
                  "-DWITH_MOZJS=1" \

@@ -1,0 +1,16 @@
+          MODULE=lxtask
+         VERSION=0.1.8
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/lxde
+      SOURCE_VFY=sha256:dfb443805f72857b5ad711d4bb862a9cd3db0cd2df16d0c24f23ed679b0bef40
+        WEB_SITE=http://lxde.org
+         ENTERED=20090713
+         UPDATED=20180323
+           SHORT="A task manager for LXDE"
+      MAINTAINER=florin@lunar-linux.org
+
+cat << EOF
+LXTask - lightweight and desktop-independent task manager derived from
+xfce4-taskmanager with all dependencies on xfce removed, new features,
+and some improvement of the user interface.
+EOF

@@ -1,11 +1,11 @@
           MODULE=maxima
-         VERSION=5.38.1
+         VERSION=5.42.1
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$SFORGE_URL/maxima/
-      SOURCE_VFY=sha256:0e866536ab5847ec045ba013570f80f36206ca6ce07a5d13987010bcb321c6dc
+      SOURCE_VFY=sha256:8f555aec33bc61b5a3ee0fe2e9d6c1179db67a2ff7e0eceb6bb614058eeb40cd
         WEB_SITE=http://maxima.sourceforge.net
          ENTERED=20031027
-         UPDATED=20160519
+         UPDATED=20181017
            SHORT="a sophisticated computer algebra system"
 
 cat << EOF

@@ -1,11 +1,11 @@
           MODULE=ofono
-         VERSION=1.16
+         VERSION=1.26
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=http://www.kernel.org/pub/linux/network/ofono/
-      SOURCE_VFY=sha256:403b98dadece8bc804c0bd16b96d3db5a3bb0f84af64b3d67924da2d1a754b07
+      SOURCE_VFY=sha256:92e18c20c889addda648aefbb5e3ab1238007d88b18449f407a96533afe18026
         WEB_SITE=http://ofono.org/
          ENTERED=20110815
-         UPDATED=20150202
+         UPDATED=20181202
            SHORT="Open source telephony"
 
 cat << EOF

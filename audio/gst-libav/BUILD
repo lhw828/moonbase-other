@@ -1,5 +1,6 @@
 OPTS+=" --disable-static \
         --disable-valgrind \
-        --with-system-libav"
+        --disable-fatal-warnings \
+        --without-system-libav"
 
 default_build

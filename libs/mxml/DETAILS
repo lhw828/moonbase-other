@@ -1,10 +1,11 @@
           MODULE=mxml
-         VERSION=2.9
+         VERSION=2.12
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://www.msweet.org/files/project3
+ SOURCE_URL_FULL=https://github.com/michaelrsweet/mxml/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:4d850d15cdd4fdb9e82817eb069050d7575059a9a2729c82b23440e4445da199
         WEB_SITE=www.minixml.org
          ENTERED=20150617
-         UPDATED=20150617
+         UPDATED=20181022
            SHORT="a small XML library"
 
 cat << EOF

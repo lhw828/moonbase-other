@@ -1,16 +1,16 @@
           MODULE=nghttp2
-         VERSION=1.28.0
+         VERSION=1.34.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/nghttp2/nghttp2/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:809ecbf2f70365cd440110c2bde81e0c074db59b693effce748fdafb5cc388f9
+      SOURCE_VFY=sha256:a0ca4071e59cb1a08cbc40e86127f42c6c7f5ae98d121094d917f81fc6fa0728
         WEB_SITE=http://nghttp2.org/
          ENTERED=20160412
-         UPDATED=20171204
+         UPDATED=20181011
            SHORT="Framing layer of HTTP/2 implemented as a reusable C library"
 
 cat <<EOF
-nghttp2 is an implementation of HTTP/2 and its header compression algorithm HPACK
-in C. The framing layer of HTTP/2 is implemented as a form of reusable C library.
-On top of that is implemented HTTP/2 client, server and proxy.
+nghttp2 is an implementation of HTTP/2 and its header compression algorithm
+HPACK in C. The framing layer of HTTP/2 is implemented as a form of reusable C
+library. On top of that is implemented HTTP/2 client, server and proxy.
 There is also developed load test and benchmarking tool for HTTP/2 and SPDY.
 EOF

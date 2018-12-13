@@ -1,19 +1,22 @@
+sedit 's:/usr/local:/usr:' GNUmakefile &&
 sed -i -e 's/^CXXFLAGS/#CXXFLAGS/' GNUmakefile &&
 export CXXFLAGS="${CXXFLAGS} -DNDEBUG -fPIC" &&
 
 make libcryptopp.so &&
 default_make &&
 
-cat > libcrypto++.pc << EOF  &&
+cat > libcrypto++.pc << EOF &&
   # Written by Alexander Rødseth <rodseth@gmail.com>
+  # Modified by Dennis Veatch <dennisveatch@bellsouth.net>
+  # to use the version variable from the module
 
 prefix=/usr
 libdir=${prefix}/lib
 includedir=${prefix}/include
 
-Name: libcrypto++-5.6.2
+Name: libcrypto++-$VERSION
 Description: Class library of cryptographic schemes
-Version: 5.6.2
+Version: $VERSION
 Libs: -L${libdir} -lcryptopp
 Cflags: -I${includedir}
 EOF

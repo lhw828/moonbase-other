@@ -1,11 +1,11 @@
           MODULE=geos
-         VERSION=3.6.2
+         VERSION=3.7.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://download.osgeo.org/geos/
-      SOURCE_VFY=sha256:045a13df84d605a866602f6020fc6cbf8bf4c42fb50de237a08926e1d7d7652a
-        WEB_SITE=http://geos.refractions.net/
+      SOURCE_VFY=sha256:0006c7b49eaed016b9c5c6f872417a7d7dc022e069ddd683335793d905a8228c
+        WEB_SITE=https://trac.osgeo.org/geos/
          ENTERED=20050902
-         UPDATED=20171130
+         UPDATED=20181207
            SHORT="Geometry Engine Open Source"
 cat << EOF
 GEOS (Geometry Engine - Open Source) is a C++ port of the

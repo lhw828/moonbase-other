@@ -1,11 +1,9 @@
-# disabled for now in Lunar
-OPTS+=" -DLLVM_ENABLE_SPHINX=OFF" &&
-
 OPTS+=" -DLLVM_ENABLE_RTTI=ON \
-        -DBUILD_SHARED_LIBS=ON" &&
-
-# automatically build enabled docs
-OPTS+=" -DLLVM_BUILD_DOCS=ON" &&
+        -DLLVM_INSTALL_UTILS=ON \
+        -DLLVM_BUILD_LLVM_DYLIB=ON \
+        -DLLVM_LINK_LLVM_DYLIB=ON \
+        -DLLVM_ENABLE_SPHINX=OFF \
+        -DLLVM_ENABLE_DOXYGEN=OFF"
 
 # don't run doxygen at build AND install time
 OPTS+=" -DCMAKE_SKIP_INSTALL_ALL_DEPENDENCY=ON" &&
@@ -14,6 +12,7 @@ TARGETS=X86 &&
 if [[ "$USE_AMDGPU" = "y" ]]; then
   TARGETS+=";AMDGPU"
 fi &&
-OPTS+=" -DLLVM_TARGETS_TO_BUILD=${TARGETS}" &&
+
+OPTS+=" -DLLVM_TARGETS_TO_BUILD=${TARGETS};BPF" &&
 
 default_cmake_build

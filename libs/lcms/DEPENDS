@@ -1,4 +1,4 @@
-depends pkgconfig
+depends pkgconf
 
 optional_depends "zlib" "" "" "for ZLIB support"
 
@@ -12,7 +12,7 @@ optional_depends "tiff"                 \
                  "--without-tiff"       \
                  "for TIFF support"
 
-optional_depends "Python"               \
+optional_depends python2               \
                  "--with-python"        \
                  "--without-python"     \
                  "for python extension"

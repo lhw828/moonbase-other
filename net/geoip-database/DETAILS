@@ -1,14 +1,14 @@
           MODULE=geoip-database
-         VERSION=20171205
+         VERSION=20181031
           SOURCE=GeoIP.dat.gz
          SOURCE2=GeoIPv6.dat.gz
       SOURCE_URL=http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/
      SOURCE2_URL=http://geolite.maxmind.com/download/geoip/database/
-      SOURCE_VFY=sha256:eb1c7c8275a98df4e94966ce0af6260b0b9c20995a09a43941cd49ed880d6424
-     SOURCE2_VFY=sha256:103bcb3b7b7b33db879d57631f31a195b14c793fd3e7a26d877a7e77918f8c8b
+      SOURCE_VFY=sha256:b9c05eb8bfcf90a6ddfdc6815caf40a8db2710f0ce3dd48fbd6c24d485ae0449
+     SOURCE2_VFY=sha256:a94398430701c8458fedbd20aa2a5d460858441f2ca495f32621f6d16154171f
        WEB_SITE=http://dev.maxmind.com/geoip/legacy/downloadable/
          ENTERED=20151002
-         UPDATED=20171211
+         UPDATED=20181104
         SHORT="GeoLite country geolocation database compiled by MaxMind"
 
 cat << EOF

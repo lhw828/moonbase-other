@@ -1,11 +1,12 @@
           MODULE=ack
-         VERSION=2.18
+         VERSION=2.24
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/
-      SOURCE_VFY=sha256:fb4a0a11a5411cba5764163b8d074a447c2a753758821151b31dc7533663f058
+      SOURCE_VFY=sha256:72934009ad8fe712deeb2c41960f2746d0a25e3a226ad7c54232c00105e54f00
         WEB_SITE=http://betterthangrep.com/
+            TYPE=perl
          ENTERED=20170301
-         UPDATED=20170407
+         UPDATED=20180712
            SHORT="ack is a tool like grep, optimized for programmers"
 
 cat << EOF

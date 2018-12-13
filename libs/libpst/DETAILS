@@ -1,11 +1,11 @@
           MODULE=libpst
-         VERSION=0.6.67
+         VERSION=0.6.72
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.five-ten-sg.com/libpst/packages/
-      SOURCE_VFY=sha256:e774e38391760c0410769aca1b3f934117b6e10cd152529f5e4e69a1924cafda
+      SOURCE_VFY=sha256:8a19d891eb077091c507d98ed8e2d24b7f48b3e82743bcce2b00a12040f5d507
         WEB_SITE=http://www.five-ten-sg.com/libpst/
          ENTERED=20100425
-         UPDATED=20160731
+         UPDATED=20180831
            SHORT="convert Outlook pst files"
 
 cat << EOF

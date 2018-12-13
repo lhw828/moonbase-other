@@ -1,11 +1,11 @@
           MODULE=meld
-         VERSION=3.18.0
+         VERSION=3.19.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
-      SOURCE_VFY=sha256:848158b1e5c7473b9da3ddc16e057aad8951ec82979beb5914b8b4acdf97223e
+      SOURCE_VFY=sha256:7e442ae2c8e62c1b5a7b1b99e951dc7f0cef6f6465196d507012f47b37ed2cc6
         WEB_SITE=http://meld.sourceforge.net/
          ENTERED=20021119
-         UPDATED=20171003
+         UPDATED=20181121
            SHORT="A visual diff and merge tool"
 
 cat << EOF

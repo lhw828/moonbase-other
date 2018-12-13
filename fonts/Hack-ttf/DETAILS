@@ -1,12 +1,12 @@
           MODULE=Hack-ttf
-         VERSION=2_020
+         VERSION=3.003
           SOURCE=${MODULE%-*}-v$VERSION-ttf.tar.gz
-      SOURCE_URL=https://github.com/chrissimpkins/Hack/releases/download/v2.020/
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE%-*}-v$VERSION-ttf
-      SOURCE_VFY=sha256:43879dd540a0507b96c6ecbe50dd8a2bfef81b055d9b8b40e490f2c1fb71e370
+ SOURCE_URL_FULL=https://github.com/source-foundry/Hack/archive/v${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE%-*}-$VERSION
+      SOURCE_VFY=sha256:3c6f1a20e86744077e83c9bacf879a5b13f659f1c07e9c5c57d6efc3cbe66c07
         WEB_SITE=https://sourcefoundry.org/hack/
          ENTERED=20160801
-         UPDATED=20160801
+         UPDATED=20180320
            SHORT="typeface base on Bitstream Vera Mono"
 
 cat << EOF

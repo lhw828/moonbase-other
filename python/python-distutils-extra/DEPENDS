@@ -1,4 +1,2 @@
-depends setuptools
+depends python-six
 depends intltool
-
-

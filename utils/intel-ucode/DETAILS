@@ -1,0 +1,20 @@
+          MODULE=intel-ucode
+         VERSION=20180807
+          SOURCE=microcode-$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/microcode-$VERSION
+      SOURCE_URL=https://downloadmirror.intel.com/28039/eng/
+      SOURCE_VFY=sha256:29f9e8dc27e6c9b6488cecd7fe2394030307799e511db2d197d9e6553a7f9e40
+        WEB_SITE=http://downloadcenter.intel.com
+         ENTERED=20070916
+         UPDATED=20180809
+           SHORT="Intel ucode - data files"
+
+cat << EOF
+The intel-ucode data file contains the latest microcode definitions for all
+Intel processors. Intel releases microcode updates to correct processor
+behavior as documented in the respective processor specification updates.
+While the regular approach to getting this microcode update is via a BIOS
+upgrade, Intel realizes that this can be an administrative hassle.
+The module creates a /boot/intel-ucode.img file which will be put by grub as
+the first initrd file at the next generation of the /boot/grub/grub.cfg file.
+EOF

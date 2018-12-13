@@ -1,18 +1,17 @@
           MODULE=babl
-         VERSION=0.1.30
+         VERSION=0.1.60
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://download.gimp.org/pub/babl/${VERSION%.*}/
-      SOURCE_VFY=sha256:45c12c7b06d965123756821fc70c968137d16d44151a6eb55075f904e11d53cc
+      SOURCE_VFY=sha256:a3d1eeccb6057ccbc189dc926ebaca96cd4896f3391f857b86334d2245f0604f
         WEB_SITE=http://gegl.org/babl
          ENTERED=20081017
-         UPDATED=20170906
+         UPDATED=20181116
            SHORT="A dynamic any to any pixel format translation library"
 
 cat << EOF
-It allows converting between different methods of storing pixels
-known as pixel formats that have with different bitdepths
+It allows converting between different methods of storing pixels known as pixel
+formats that have with different bitdepths
 and other data representations, color models and component permutations.
-A vocabulary to formulate new pixel formats from existing primitives
-is provided as well as the framework to add
-new color models and data types.
+A vocabulary to formulate new pixel formats from existing primitives is provided
+as well as the framework to add new color models and data types.
 EOF

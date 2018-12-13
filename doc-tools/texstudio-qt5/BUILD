@@ -1,5 +1,10 @@
 . /etc/profile.d/qt5.rc &&
 
-/usr/lib/qt5/bin/qmake texstudio.pro &&
+OPTS+=" USE_SYSTEM_QUAZIP=1 USE_SYSTEM_HUNSPELL=1" &&
 
-default_build
+/usr/lib/qt5/bin/qmake $OPTS texstudio.pro &&
+
+make &&
+prepare_install &&
+make install
+

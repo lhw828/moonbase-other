@@ -1,7 +1,6 @@
 default_pre_build &&
 
-# Remove apparmor
-patch_it $SOURCE2 1 &&
+aclocal &&
 automake &&
 
 if ! in_depends $MODULE libxklavier; then

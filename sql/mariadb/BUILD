@@ -3,7 +3,7 @@ OPTS+=" -DSYSCONFDIR=/etc/mysql \
         -DMYSQL_UNIX_ADDR=/run/mysqld/mysqld.sock \
         -DBUILD_CONFIG=mysql_release \
         -DINSTALL_BINDIR=bin \
-        -DINSTALL_SBINDIR=sbin \
+        -DINSTALL_SBINDIR=bin \
         -DINSTALL_INFODIR=share/info \
         -DINSTALL_MANDIR=share/man \
         -DINSTALL_PLUGINDIR=lib/mysql/plugin \
@@ -18,26 +18,30 @@ OPTS+=" -DSYSCONFDIR=/etc/mysql \
         -DINSTALL_MYSQLTESTDIR=share/mysql/mysql-test \
         -DINSTALL_MYSQLDATADIR=/var/lib/mysql \
         -DENABLED_LOCAL_INFILE=ON \
-        -DDEFAULT_CHARSET=utf8mb4 \
-        -DDEFAULT_COLLATION=utf8mb4_unicode_ci \
-        -DCMAKE_EXE_LINKER_FLAGS='-L/usr/lib/libjemalloc.so' \
-        -DPLUGIN_MROONGA=NO \
-        -DPLUGIN_AUTH_GSSAPI=NO \
-        -DAUTH_GSSAPI_PLUGIN_TYPE=OFF \
+        -DDEFAULT_CHARSET=utf8 \
+        -DDEFAULT_COLLATION=utf8_general_ci \
+        -DCMAKE_EXE_LINKER_FLAGS='-ljemalloc' \
         -DWITH_ZLIB=system \
         -DWITH_READLINE=ON \
         -DWITH_EXTRA_CHARSETS=complex \
         -DWITH_LIBWRAP=OFF \
-        -DWITH_JEMALLOC=system \
+        -DWITH_JEMALLOC=ON \
         -DWITH_PCRE=bundled \
-        -DWITH_INNOBASE_STORAGE_ENGINE=1 \
-        -DWITH_MYISAMMRG_STORAGE_ENGINE=1 \
-        -DWITH_MYISAM_STORAGE_ENGINE=1 \
-        -DWITH_PARTITION_STORAGE_ENGINE=1 \
-        -DWITHOUT_EXAMPLE_STORAGE_ENGINE=1 \
-        -DWITHOUT_TOKUDB_STORAGE_ENGINE=1 \
-        -DWITHOUT_PBXT_STORAGE_ENGINE=1 \
-        -DWITH_EMBEDDED_SERVER=ON" &&
+        -DWITH_INNOBASE_STORAGE_ENGINE=ON \
+        -DWITH_MYISAMMRG_STORAGE_ENGINE=ON \
+        -DWITH_MYISAM_STORAGE_ENGINE=ON \
+        -DWITH_PARTITION_STORAGE_ENGINE=ON \
+        -DWITHOUT_EXAMPLE_STORAGE_ENGINE=ON \
+        -DWITHOUT_TOKUDB_STORAGE_ENGINE=ON \
+        -DWITHOUT_PBXT_STORAGE_ENGINE=ON \
+        -DPLUGIN_AUTH_GSSAPI=NO \
+        -DAUTH_GSSAPI_PLUGIN_TYPE=OFF \
+        -DAWS_SDK_EXTERNAL_PROJECT=OFF \
+        -DWITH_EMBEDDED_SERVER=ON"
+
+if module_installed systemd; then
+  OPTS+=" --DWITH_SYSTEMD=yes"
+fi &&
 
 # A few of these flags are necessary when building mariadb with gcc >= 4.4
 CFLAGS="-fPIC ${CFLAGS} -fno-strict-aliasing -DBIG_JOINS=1 -fomit-frame-pointer -fno-delete-null-pointer-checks"
@@ -56,3 +60,4 @@ fi &&
 for i in analyze repair optimize; do
   ln -sf /usr/bin/mysql{check,$i}
 done
+

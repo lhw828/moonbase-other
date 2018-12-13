@@ -1,5 +1,6 @@
+# WHEN UPDATING THIS MODULE, ALSO UPDATE THE "openmp" MODULE
           MODULE=llvm
-         VERSION=5.0.0
+         VERSION=7.0.0
           SOURCE=$MODULE-$VERSION.src.tar.xz
          SOURCE2=cfe-$VERSION.src.tar.xz
          SOURCE3=clang-tools-extra-$VERSION.src.tar.xz
@@ -7,24 +8,23 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/$MODULE-${VERSION}.src
       SOURCE_URL=http://llvm.org/releases/$VERSION/
      SOURCE2_URL=$SOURCE_URL
      SOURCE3_URL=$SOURCE_URL
-      SOURCE_VFY=sha256:e35dcbae6084adcf4abb32514127c5eabd7d63b733852ccdb31e06f1373136da
-     SOURCE2_VFY=sha256:019f23c2192df793ac746595e94a403908749f8e0c484b403476d2611dd20970
-     SOURCE3_VFY=sha256:87d078b959c4a6e5ff9fd137c2f477cadb1245f93812512996f73986a6d973c6
+      SOURCE_VFY=sha256:8bc1f844e6cbde1b652c19c1edebc1864456fd9c78b8c1bea038e51b363fe222
+     SOURCE2_VFY=sha256:550212711c752697d2f82c648714a7221b1207fd9441543ff4aa9e3be45bba55
+     SOURCE3_VFY=sha256:937c5a8c8c43bc185e4805144744799e524059cac877a44d9063926cd7a19dbe
         WEB_SITE=http://www.llvm.org
          ENTERED=20090128
-         UPDATED=20170908
+         UPDATED=20181028
            SHORT="Low Level Virtual Machine"
 
 cat << EOF
-LLVM is a robust system, particularly well suited for developing new
-mid-level language-independent analyses and optimizations of all sorts,
-including those that require extensive interprocedural analysis. LLVM is
-also a great target for front-end development for conventional or research
-programming languages, including those which require compile-time,
-link-time, or run-time optimization for effective implementation, proper
-tail calls or garbage collection.
+LLVM is a robust system, particularly well suited for developing new mid-level
+language-independent analyses and optimizations of all sorts, including those
+that require extensive interprocedural analysis. LLVM is also a great target
+for front-end development for conventional or research programming languages,
+including those which require compile-time, link-time, or run-time optimization
+for effective implementation, proper tail calls or garbage collection.
 
 Clang is a compiler front-end for the C family of languages (C, C++,
-Objective-C, and Objective-C++) which can be built as a part of the
-LLVM compiler intrastructure project.
+Objective-C and Objective-C++) which can be built as a part of the LLVM
+compiler intrastructure project.
 EOF

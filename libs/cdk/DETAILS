@@ -1,11 +1,11 @@
           MODULE=cdk
-         VERSION=5.0-20161210
-          SOURCE=$MODULE.tar.gz
-      SOURCE_URL=http://invisible-island.net/datafiles/release/
-      SOURCE_VFY=sha256:9e7558cb8850ca5c7ab4cc38e0612b0e8c4aad680d2a2511f31d62f239e35fad
+         VERSION=5.0-20180306
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=ftp://ftp.invisible-island.net/cdk/
+      SOURCE_VFY=sha256:cca9e345c6728c235eb3188af9266327c09c01da124a30b0cbd692ac08c6ebd0
         WEB_SITE=http://dickey.his.com/cdk/
          ENTERED=20060423
-         UPDATED=20171206
+         UPDATED=20180919
            SHORT="A lib that contains ready to use widgets for curses programs"
 
 cat << EOF

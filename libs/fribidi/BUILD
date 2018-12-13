@@ -1,13 +1,4 @@
-sedit "s:# *include <glib/[^>]*>:#include <glib.h>:" charset/* lib/* &&
-
-# Get rid of docs since it requires c2man.
-sedit "s:bin doc test:bin test:" Makefile.am &&
-# Don't need this
-rm bootstrap &&
-
-# So it doens't bark about missing
-touch INSTALL &&
-mkdir m4 &&
-autoreconf -i &&
-OPTS+=" --with-glib=yes" &&
-default_build
+OPTS+=" --disable-docs"
+default_config &&
+sedit 's; -shared ; -Wl,-O1,--as-needed\0;g' libtool &&
+default_make

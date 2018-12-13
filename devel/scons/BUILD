@@ -1,7 +1,7 @@
-python setup.py build &&
+OPTS+=" --standard-lib \
+        --install-data=/usr/share"
 
-prepare_install &&
+default_python2_build &&
 
-python setup.py install --root=/ \
-                        --prefix=/usr \
-                        --install-data=/usr/share
+# fix for python 2.7
+sed -i 's:^#!.*bin/env python:#!/usr/bin/env python2:' /usr/bin/scons*

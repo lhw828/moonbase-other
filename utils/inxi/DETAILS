@@ -1,11 +1,11 @@
           MODULE=inxi
-         VERSION=2.3.53
+         VERSION=3.0.29-1
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://sources.archlinux.org/other/community/$MODULE/
-      SOURCE_VFY=sha256:a2371dcae4bbe93e42d3fe574ba685df8b51999b647637b607b8ab7120ecf4f4
+ SOURCE_URL_FULL=https://github.com/smxi/inxi/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:f6037e668933f2028b67ce12e80ea662dec3d3c20d260d26dc1d9ab86f75803c
         WEB_SITE=http://inxi.org
          ENTERED=20150603
-         UPDATED=20171208
+         UPDATED=20181212
         SHORT="A script to get system information"
 
 cat << EOF

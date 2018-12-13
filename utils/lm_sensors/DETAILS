@@ -1,12 +1,12 @@
           MODULE=lm_sensors
-         VERSION=3.4.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
-   SOURCE_URL[0]=http://dl.lm-sensors.org/lm-sensors/releases/
-   SOURCE_URL[1]=ftp://ftp.netroedge.com/pub/lm-sensors/
-      SOURCE_VFY=sha256:e0579016081a262dd23eafe1d22b41ebde78921e73a1dcef71e05e424340061f
+         VERSION=3.5.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/lm-sensors-${VERSION//\./-}
+ SOURCE_URL_FULL=https://github.com/groeck/lm-sensors/archive/V${VERSION//\./-}.tar.gz
+      SOURCE_VFY=sha256:f671c1d63a4cd8581b3a4a775fd7864a740b15ad046fe92038bcff5c5134d7e0
         WEB_SITE=http://www.lm-sensors.org
          ENTERED=20011021
-         UPDATED=20150626
+         UPDATED=20181130
            SHORT="Hardware health monitoring tools"
 
 cat << EOF

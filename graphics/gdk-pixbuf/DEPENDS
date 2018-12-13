@@ -1,33 +1,39 @@
 depends glib-2
 depends shared-mime-info
 depends tiff
+depends meson
 
 optional_depends %JPEG \
-                 "--with-libjpeg"    \
-                 "--without-libjpeg" \
-                 "for JPEG image loader"
+                 "-Djpeg=true" \
+                 "-Djpeg=false" \
+                 "for JPEG image loader" y
 
 optional_depends libpng \
-                 "--with-libpng"    \
-                 "--without-libpng" \
+                 "-Dpng=true" \
+                 "-Dpng=false" \
                  "for PNG image loader" y
 
 optional_depends jasper \
-                 "--with-libjasper"    \
-                 "--without-libjasper" \
-                 "for JPEG 2000 image loader"
+                 "-Djasper=true" \
+                 "-Djasper=false" \
+                 "for JPEG 2000 image loader" y
 
 optional_depends libX11 \
-                 "--with-x11"    \
-                 "--without-x11" \
-                 "for X11 support (needed by Adobe Acrobat Reader)"
+                 "-Dx11=true" \
+                 "-Dx11=false" \
+                 "for X11 support (needed by Adobe Acrobat Reader)" y
+
+optional_depends libxml2 \
+                 "-Dman=true" \
+                 "-Dman=false" \
+                 "for installing man pages" n
 
 optional_depends gtk-doc \
-                 "--enable-gtk-doc" \
-                 "--disable-gtk-doc" \
-                 "for building documentation"
+                 "-Ddocs=true" \
+                 "-Ddecs=false" \
+                 "for building documentation" n
 
 optional_depends gobject-introspection \
-                 "--enable-introspection"  \
-                 "--disable-introspection" \
-                 "for gobject introspection support"
+                 "-Dgir=true"  \
+                 "-Dgir=false" \
+                 "for gobject introspection support" y

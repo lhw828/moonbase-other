@@ -1,5 +1,7 @@
 depends pcre
 depends libxml2
+depends gd
+depends enchant
 
 optional_depends gettext \
                  "--with-gettext=shared" "" \
@@ -12,10 +14,6 @@ optional_depends readline \
 optional_depends aspell \
                  "--with-pspell=shared" "" \
                  "for aspell spelling functions"
-
-optional_depends enchant \
-                 "--with-enchant=shared,/usr" "" \
-                 "for enchant spelling functions"
 
 optional_depends mhash \
                  "--with-mhash" "" \
@@ -60,10 +58,6 @@ optional_depends unixODBC \
 optional_depends freetype2 \
                  "--with-freetype-dir=/usr" "" \
                  "for freetype2 support"
-
-optional_depends gd \
-                 "--with-gd=shared,/usr --enable-gd-native-ttf" "" \
-                 "external gd for on-the-fly graphics"
 
 optional_depends curl \
                  "--with-curl=shared" "" \

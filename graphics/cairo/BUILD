@@ -2,10 +2,7 @@
 CFLAGS+=" -fno-lto" &&
 CXXFLAGS+=" -fno-lto" &&
 
-OPTS+=" --disable-static \
-        --enable-pdf=yes \
-        --enable-svg \
-        --enable-gobject" &&
+OPTS+=" --disable-static --enable-gobject=yes"
 
 if module_installed mesa-lib; then
   if module_installed NVIDIA; then
@@ -14,7 +11,7 @@ if module_installed mesa-lib; then
   else
     OPTS+=" --enable-gl"
   fi
-fi &&
+fi
 
 if [ "`get_module_config DOCS`" = "n" ]; then
   sedit 's/SUBDIRS = src doc util/SUBDIRS = src util/g' Makefile.in

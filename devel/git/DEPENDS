@@ -1,4 +1,4 @@
-depends Python
+depends python
 depends %OSSL
 depends rsync
 depends zlib

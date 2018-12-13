@@ -1,11 +1,12 @@
           MODULE=DBD-mysql
-         VERSION=4.043
+         VERSION=4.048
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/M/MI/MICHIELB/
-      SOURCE_VFY=sha256:629f865e8317f52602b2f2efd2b688002903d2e4bbcba5427cb6188b043d6f99
-        WEB_SITE=http://search.cpan.org/~capttofu/DBD-mysql/
+      SOURCE_URL=https://cpan.metacpan.org/authors/id/M/MI/MICHIELB/
+      SOURCE_VFY=sha256:1737ffcae68712c04bf529f098df53534ca9a60eb3ce0ad23700bfc40c6415ff
+        WEB_SITE=https://metacpan.org/release/DBD-mysql
+            TYPE=perl
          ENTERED=20020727
-         UPDATED=20170702
+         UPDATED=20181018
            SHORT="The MySQL and mSQL DBD modules for perl DBI"
 
 cat << EOF

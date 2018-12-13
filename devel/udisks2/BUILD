@@ -1,9 +1,5 @@
 OPTS+=" --disable-man \
         --disable-static \
-        --enable-available-modules" &&
-
-OPTS+=" --libexecdir=/usr/lib" &&
-
-./autogen.sh &&
+        --enable-available-modules"
 
 default_build

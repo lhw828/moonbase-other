@@ -1,16 +1,15 @@
           MODULE=redis
-         VERSION=4.0.4
+         VERSION=5.0.3
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://download.redis.io/releases
-      SOURCE_VFY=sha256:45ca3a8f3576c96721743ea9d589259f30e6dc42d4d5e5b51d842fa9aede8911
+      SOURCE_VFY=sha256:e290b4ddf817b26254a74d5d564095b11f9cd20d8f165459efa53eb63cd93e02
         WEB_SITE=http://redis.io/
-         ENTERED=20150403
-         UPDATED=20171202
+         ENTERED=20181022
+         UPDATED=20181212
            SHORT="Advanced key-value cache and store"
 
 cat << EOF
-Redis is an open source, BSD licensed, advanced key-value cache and
-store. It is often referred to as a data structure server since keys
-can contain strings, hashes, lists, sets, sorted sets, bitmaps and
-hyperloglogs.
+Redis is an open source, BSD licensed, advanced key-value cache and store.
+It is often referred to as a data structure server since keys can contain
+strings, hashes, lists, sets, sorted sets, bitmaps and hyperloglogs.
 EOF

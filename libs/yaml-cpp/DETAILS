@@ -1,12 +1,13 @@
           MODULE=yaml-cpp
-         VERSION=0.5.3
+         VERSION=0.6.2
           SOURCE=$MODULE-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-release-$VERSION
- SOURCE_URL_FULL=http://github.com/jbeder/yaml-cpp/archive/release-$VERSION.tar.gz
-      SOURCE_VFY=sha256:ac50a27a201d16dc69a881b80ad39a7be66c4d755eda1f76c3a68781b922af8f
+      SOURCE_URL=http://github.com/jbeder/yaml-cpp/archive/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION
+      SOURCE_VFY=sha256:e4d8560e163c3d875fd5d9e5542b5fd5bec810febdcba61481fe5fc4e6b1fd05
         WEB_SITE=http://github.com/jbeder/yaml-cpp/
+            TYPE=cmake
          ENTERED=20130417
-         UPDATED=20160201
+         UPDATED=20181122
            SHORT="C++ YAML parsing and emitting library"
 
 cat << EOF

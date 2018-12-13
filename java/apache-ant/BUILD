@@ -1,8 +1,4 @@
-if module_installed sun-jdk; then
-  . /etc/profile.d/sun-jdk.rc
-else
-  . /etc/profile.d/sun-jre.rc
-fi &&
+. /etc/profile.d/sun-jdk.rc &&
 
 prepare_install &&
 

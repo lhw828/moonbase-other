@@ -1,12 +1,12 @@
           MODULE=firejail
-         VERSION=0.9.50
+         VERSION=0.9.56
           SOURCE=$MODULE-$VERSION.tar.xz
  SOURCE_URL_FULL=http://github.com/netblue30/firejail/archive/$VERSION.tar.gz
        SOURCE_URL=$SFORGE_URL/$MODULE/
-      SOURCE_VFY=sha256:c15475b7ec8b42ee8707f03207bef9ba92d801fc61fd8d1e0f8cfc03833bb800
+      SOURCE_VFY=sha256:41844487c700eeb3ac76235a555ba48dd40b42a1de2892aad329c4901478312d
         WEB_SITE=http://github.com/netblue30/firejail/
          ENTERED=20160201
-         UPDATED=20170909
+         UPDATED=20180919
            SHORT="Linux namespaces and seccomp-bpf sandbox"
 
 cat << EOF

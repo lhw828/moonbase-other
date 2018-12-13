@@ -1,11 +1,11 @@
           MODULE=CPU-X
-         VERSION=3.1.1
+         VERSION=3.2.3
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/X0rg/CPU-X/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:3ddbac754b8b7e77feb503e22f34b03009400a420397478af733cf4f7dfad5cd
+      SOURCE_VFY=sha256:4c11b3e3632870e9af81c5c0fa642edff8dd4622a172bbb788c4e6be595eb014
         WEB_SITE=http://github.com/X0rg/CPU-X/
          ENTERED=20160201
-         UPDATED=20161017
+         UPDATED=20180702
            SHORT="Gathers information on CPU, motherboard and more"
 
 cat <<EOF

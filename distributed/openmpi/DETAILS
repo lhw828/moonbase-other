@@ -1,15 +1,14 @@
           MODULE=openmpi
-         VERSION=3.0.0
+         VERSION=3.1.3
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.open-mpi.org/software/ompi/v${VERSION%.*}/downloads
-      SOURCE_VFY=sha256:0bbb279b88edc25bbded39520dab6d4b32020277a6088fb1456c9437a8231cf8
+      SOURCE_VFY=sha256:0254627d8a9b12a8f50213ed01e7a94dd7e91b340abf5c53bcf0b89afe6fb77d
         WEB_SITE=http://www.open-mpi.org
          ENTERED=20131025
-         UPDATED=20170930
+         UPDATED=20181107
            SHORT="High Performance Message Passing Library"
 
 cat << EOF
-The Open MPI Project is an open source MPI-2 implementation
-that is developed and maintained by a consortium of academic,
-research, and industry partners.
+The Open MPI Project is an open source MPI-2 implementation that is developed
+and maintained by a consortium of academic, research, and industry partners.
 EOF

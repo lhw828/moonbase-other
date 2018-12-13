@@ -1,11 +1,12 @@
           MODULE=openscad
-         VERSION=2015.03-2
-          SOURCE=$MODULE-$VERSION.src.tar.gz
-      SOURCE_URL=http://files.openscad.org
-      SOURCE_VFY=sha256:a2535bb9e27d96e10e1e19268a596155164c7129d410a0c7f96edc2d09400083
+         VERSION=2015.03-3
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/openscad/openscad/archive/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION
+      SOURCE_VFY=sha256:7816d095db9107325dd78102dd4b972c6cd931a92e28b13ff4d20425bb2c123e
         WEB_SITE=http://www.openscad.org
          ENTERED=20160414
-         UPDATED=20160502
+         UPDATED=20181211
            SHORT="create solid 3D CAD objects"
 
 cat << EOF

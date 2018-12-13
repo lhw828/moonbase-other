@@ -1,11 +1,11 @@
           MODULE=libwebp
-         VERSION=0.6.0
+         VERSION=1.0.1
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://downloads.webmproject.org/releases/webp/
-      SOURCE_VFY=sha256:c928119229d4f8f35e20113ffb61f281eda267634a8dc2285af4b0ee27cf2b40
+      SOURCE_VFY=sha256:8c744a5422dbffa0d1f92e90b34186fb8ed44db93fbacb55abd751ac8808d922
         WEB_SITE=https://developers.google.com/speed/webp/
          ENTERED=20110917
-         UPDATED=20170428
+         UPDATED=20181119
            SHORT="New image format that provides lossy compression for photographic images"
 
 cat << EOF

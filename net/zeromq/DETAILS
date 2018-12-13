@@ -1,11 +1,12 @@
           MODULE=zeromq
-         VERSION=4.2.2
+         VERSION=4.2.5
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=https://github.com/zeromq/libzmq/releases/download/v$VERSION/
-      SOURCE_VFY=sha256:5b23f4ca9ef545d5bd3af55d305765e3ee06b986263b31967435d285a3e6df6b
+      SOURCE_URL=https://github.com/zeromq/libzmq/releases/download/v${VERSION}/
+      SOURCE_VFY=sha256:cc9090ba35713d59bb2f7d7965f877036c49c5558ea0c290b0dcc6f2a17e489f
         WEB_SITE=http://www.zeromq.org/
+            TYPE=cmake
          ENTERED=20130529
-         UPDATED=20170714
+         UPDATED=20180904
            SHORT="Intelligent transport layer socket library"
 
 cat << EOF

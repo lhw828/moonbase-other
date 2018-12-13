@@ -1,11 +1,12 @@
           MODULE=fluidsynth
-         VERSION=1.1.6
+         VERSION=1.1.11
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=$SFORGE_URL/$MODULE/$MODULE-$VERSION/
-      SOURCE_VFY=sha256:50853391d9ebeda9b4db787efb23f98b1e26b7296dd2bb5d0d96b5bccee2171c
+ SOURCE_URL_FULL=https://github.com/FluidSynth/fluidsynth/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:da8878ff374d12392eecf87e96bad8711b8e76a154c25a571dd8614d1af80de8
         WEB_SITE=http://www.fluidsynth.org/
+            TYPE=cmake
          ENTERED=20060317
-         UPDATED=20160504
+         UPDATED=20180408
            SHORT="real-time software synthesizer"
 
 cat << EOF

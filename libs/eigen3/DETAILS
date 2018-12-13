@@ -1,11 +1,11 @@
           MODULE=eigen3
-         VERSION=3.3.4
+         VERSION=3.3.7
           SOURCE=$MODULE-$VERSION.tar.bz2
  SOURCE_URL_FULL=http://bitbucket.org/eigen/eigen/get/$VERSION.tar.bz2
-      SOURCE_VFY=sha256:dd254beb0bafc695d0f62ae1a222ff85b52dbaa3a16f76e781dce22d0d20a4a6
+      SOURCE_VFY=sha256:9f13cf90dedbe3e52a19f43000d71fdf72e986beb9a5436dddcd61ff9d77a3ce
         WEB_SITE=http://eigen.tuxfamily.org
          ENTERED=20130417
-         UPDATED=20170615
+         UPDATED=20181211
            SHORT="linear algebra libraries for simple mathematical needs"
 
 cat << EOF

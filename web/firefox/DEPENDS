@@ -1,3 +1,5 @@
+depends node
+depends llvm
 depends zip
 depends autoconf-mozilla
 depends unzip
@@ -7,7 +9,8 @@ depends curl
 depends alsa-lib
 depends libvpx
 depends freetype2
-depends rustc
+depends cbindgen
+depends python
 
 optional_depends GConf \
                  "--enable-gconf" \
@@ -19,17 +22,14 @@ optional_depends libpng \
                  "--without-system-libpng" \
                  "Build with system libpng"
 
-optional_depends cairo \
-                 "--enable-system-cairo" \
-                 "--disable-system-cairo" \
-                 "Build with system cairo ${PROBLEM_COLOR}(unstable)"
+# Saying yes gives; 0:22.25 DEBUG: configure: error: --enable-system-cairo is not supported
+#optional_depends cairo \
+#                 "--enable-system-cairo --enable-system-pixman" \
+#                 "--disable-system-cairo --disable-system-pixman" \
+#                 "Build with system cairo ${PROBLEM_COLOR}(unstable)" \
+#                 n
 
 optional_depends %FLASH "" "" "To enable Flash plugin"
-
-optional_depends hunspell \
-                 "--enable-system-hunspell" \
-                 "--disable-system-hunspell" \
-                 "Use system spelling support"
 
 optional_depends libevent \
                  "--with-system-libevent" \
@@ -50,10 +50,6 @@ optional_depends icu4c \
                  "--with-system-icu" \
                  "--without-system-icu" \
                  "Use system icu4c library"
-
-optional_depends sun-jdk \
-                 "--with-java-bin-path=/usr/lib/java/latest/bin" "" \
-                 "For java support"
 
 optional_depends pulseaudio \
                  "--enable-pulseaudio" \

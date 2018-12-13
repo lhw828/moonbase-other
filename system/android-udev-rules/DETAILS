@@ -1,0 +1,13 @@
+          MODULE=android-udev-rules
+         VERSION=20181031
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/M0Rf30/android-udev-rules/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:340a72911572b3e6414bf90eda914118004e0b6d64968ded7155274d54e26817
+        WEB_SITE=https://github.com/M0Rf30/android-udev-rules
+         ENTERED=20180812
+         UPDATED=20181101
+           SHORT="Android udev rules"
+
+cat << EOF
+Android udev rules list aimed to be the most comprehensive on the net.
+EOF

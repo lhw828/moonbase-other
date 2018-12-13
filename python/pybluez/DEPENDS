@@ -1,4 +1,0 @@
-depends setuptools
-depends bluez-5
-
-optional_depends Python "" "" "for Python2 support"

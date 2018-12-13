@@ -1,40 +1,40 @@
           MODULE=dovecot
-         VERSION=2.2.33.2
+         VERSION=2.3.4
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://www.dovecot.org/releases/2.2/
-      SOURCE_VFY=sha256:fe1e3b78609a56ee22fc209077e4b75348fa1bbd54c46f52bde2472a4c4cee84
+      SOURCE_URL=http://www.dovecot.org/releases/2.3/
+      SOURCE_VFY=sha256:d91b76eff8df6185c1799f1b279f780105bdeeea27e3286b42f4cab18efbef05
         WEB_SITE=http://www.dovecot.org
          ENTERED=20041204
-         UPDATED=20171021
+         UPDATED=20181124
            SHORT="A small, fast and secure (SSL) Maildir capable imap daemon"
 
 cat << EOF
-Dovecot is an IMAP and POP3 server for Linux/UNIX-like systems,
-written with security primarily in mind. Although it's written in C,
-it uses several coding techniques to avoid most of the common pitfalls.
+Dovecot is an IMAP and POP3 server for Linux/UNIX-like systems, written with
+security primarily in mind. Although it's written in C, it uses several coding
+techniques to avoid most of the common pitfalls.
 
 Dovecot can work with standard mbox and maildir formats and it's fully
-compatible with UW-IMAP and Courier IMAP servers' implementation of
-them as well as mail clients accessing the mailboxes directly. I have
-also plans to support storing mails in SQL databases.
+compatible with UW-IMAP and Courier IMAP servers' implementation of them as
+well as mail clients accessing the mailboxes directly. I have also plans to
+support storing mails in SQL databases.
 
-Dovecot is easy to set up and doesn't require special maintenance. Only
-thing you need is to get the authentication working properly - if your
-users are in /etc/passwd there's hardly anything you have to do.
+Dovecot is easy to set up and doesn't require special maintenance. Only thing
+you need is to get the authentication working properly - if your users are in
+/etc/passwd there's hardly anything you have to do.
 
-Dovecot should be pretty fast. There are still some optimizations that
-could be done, but I believe it already beats most other IMAP servers in
-overall performance. This is mostly because of index files that Dovecot
-maintains; instead of having to scan through all the data in mailbox,
-Dovecot can get most of the wanted information from index with little
-effort. Dovecot's indexes can scale to huge amount of messages per
-mailbox with hardly any noticeable slowdown. I've tested only up to
-367000 mails, but millions of messages should be no problem.
+Dovecot should be pretty fast. There are still some optimizations that could
+be done, but I believe it already beats most other IMAP servers in overall
+performance. This is mostly because of index files that Dovecot maintains;
+instead of having to scan through all the data in mailbox, Dovecot can get
+most of the wanted information from index with little effort.
+Dovecot's indexes can scale to huge amount of messages per mailbox with hardly
+any noticeable slowdown. I've tested only up to 367000 mails, but millions of
+messages should be no problem.
 
-Dovecot takes very little memory. Most of it goes to mmap()ed index
-and mailbox files, meaning that if operating system is low on memory,
-it can simply drop those memory pages without having to store them in
-swap. Connections are handled in separate processes, each one currently
-using around 100kB of swappable memory. Some extensions like SORT and
-THREAD will require more memory to work though.
+Dovecot takes very little memory. Most of it goes to mmap()ed index and mailbox
+files, meaning that if operating system is low on memory, it can simply drop
+those memory pages without having to store them in swap. Connections are
+handled in separate processes, each one currently using around 100kB of
+swappable memory. Some extensions like SORT and THREAD will require more memory
+to work though.
 EOF

@@ -1,11 +1,11 @@
           MODULE=unshield
-         VERSION=0.6
+         VERSION=1.4.3
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=$SFORGE_URL/synce
-      SOURCE_VFY=sha1:3e1197116145405f786709608a5a636a19f4f3e1
-        WEB_SITE=http://www.synce.org/oldwiki/index.php/Unshield
+ SOURCE_URL_FULL=https://github.com/twogood/unshield/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:aa8c978dc0eb1158d266eaddcd1852d6d71620ddfc82807fe4bf2e19022b7bab
+        WEB_SITE=https://github.com/twogood/unshield
          ENTERED=20071126
-         UPDATED=20090802
+         UPDATED=20181105
            SHORT="InstallShield CAB file unzipper"
 cat << EOF
 Works on both little-endian and big-endian systems

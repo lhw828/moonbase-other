@@ -1,13 +1,9 @@
-depends Python
+depends python-pygments
+depends python-pexpect
+depends python-pickleshare
+depends python-jedi
+depends python-prompt_toolkit
+depends python-traitlets
+depends python-simplegeneric
+depends python-backcall
 depends sqlite
-depends setuptools
-depends pexpect
-depends decorator
-depends path.py
-
-optional_depends tornado  "" "" "enable notebook"
-optional_depends pyzmq    "" "" "enable zeromq support"
-optional_depends PyQt     "" "" "enable qtconsole"
-optional_depends Pygments "" "" "enable syntax highlighter"
-optional_depends twisted  "" "" "enable networking related tasks"
-optional_depends wxPython "" "" "enable wxWindows support"

@@ -1,11 +1,11 @@
           MODULE=android-udev-rules
-         VERSION=20230303
+         VERSION=20230614
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/M0Rf30/android-udev-rules/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:be0ef595f1ff1262696ac63fa2fc16998da02c170b49be461cfc712cd4317a9f
+      SOURCE_VFY=sha256:563b8f3194110b7173dfaad61e74da2842b28c4f2409dedce04d5572ef2f056f
         WEB_SITE=https://github.com/M0Rf30/android-udev-rules
          ENTERED=20180812
-         UPDATED=20230611
+         UPDATED=20230814
            SHORT="Android udev rules"
 
 cat << EOF
